@@ -1,0 +1,14 @@
+<a tal:attributes="href view/navigation_root_url">
+    <img src="" id="isaw-logo" alt="ISAW"
+         tal:attributes="src string:${context/portal_url}/isaw_logo.png" />
+</a>
+
+<a metal:define-macro="portal_logo"
+   id="portal-logo"
+   title="Home"
+   accesskey="1"
+   tal:attributes="href view/navigation_root_url"
+   i18n:domain="plone"
+   i18n:attributes="title">
+    <img src="logo.jpg" alt=""
+         tal:replace="structure view/logo_tag" /></a>

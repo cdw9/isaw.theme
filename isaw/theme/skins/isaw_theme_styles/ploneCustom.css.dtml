@@ -3,8 +3,36 @@
   <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either)
 */
 
+body {
+    background-color: #6f5c54;
+}
 
+#visual-portal-wrapper {
+    width: 932px;
+    margin: 20px auto;
+    background: transparent url(&dtml-portal_url;/site_bg.png) repeat-y;
+    padding: 0 0 0 64px;
+}
 
+#portal-top,
+#portal-columns,
+#portal-siteactions {
+    width: 920px;
+}
+
+#content-left.hasRightCol {
+    width: 575px;
+}
+
+/* logo */
+#isaw-logo {
+    position: absolute;
+    margin-left: -64px;
+}
+
+#portal-logo {
+    margin-left: 8px;
+}
 
 
 /* </dtml-with> */

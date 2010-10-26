@@ -4,30 +4,30 @@ plone_skin:string=Plone Basic
 
 logoName:string=logo.png
 
-fontFamily:string=Verdana, Arial, sans-serif
+fontFamily:string=Arial, sans-serif
 fontBaseSize:string=12px
-fontColor:string=#333333
+fontColor:string=#231f20
 fontSmallSize:string=10px
 
 backgroundColor:string=#ffffff
-primaryColor:string=#205C90
-neutralColor:string=#dddddd
+primaryColor:string=#a44a26
+neutralColor:string=#e2ded5
 
-linkColor:string=#205C90
+linkColor:string=#a44a26
 linkHoverColor:string=#000000
-linkActiveColor:string=#205C90
-linkVisitedColor:string=#205C90
+linkActiveColor:string=#a44a26
+linkVisitedColor:string=#a44a26
 
 borderWidth:string=1px
 borderStyle:string=solid
 borderStyleAnnotations:string=dashed
 
-globalBorderColor:string=#205C90
+globalBorderColor:string=#a44a26
 globalBackgroundColor:string=#eeeeee
 globalFontColor:string=#333333
 
-headingFontFamily:string=Verdana, Arial, sans-serif
-headingColor:string=#333333
+headingFontFamily:string=Arial, sans-serif
+headingColor:string=#a44a26
 
 contentViewBorderColor:string=#75AD0A
 contentViewBackgroundColor:string=#75AD0A
@@ -49,4 +49,4 @@ discreetColor:string=#76797c
 helpBackgroundColor:string=#ffffe1
 
 columnOneWidth:string=25%
-columnTwoWidth:string=25%
+columnTwoWidth:string=160px

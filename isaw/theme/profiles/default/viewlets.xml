@@ -1,4 +1,10 @@
 <?xml version="1.0"?>
 <object>
-
+ <hidden manager="plone.belowcontentbody" skinname="NYU ISAW Theme">
+  <viewlet name="plone.abovecontenttitle.documentactions"/>
+ </hidden>
+ <hidden manager="plone.portalfooter" skinname="NYU ISAW Theme">
+  <viewlet name="plone.footer"/>
+  <viewlet name="plone.colophon"/>
+ </hidden>
 </object>
