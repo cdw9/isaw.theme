@@ -1,0 +1,5 @@
+# Set with:
+#   svn propset svn:ignore -F IGNORE.txt .
+#
+# ignoring these dirs in the buildout
+Paste*

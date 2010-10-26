@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="isaw.theme">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="NYU ISAW Theme"
+      directory="profiles/default"
+      description='Extension profile for the "NYU ISAW Theme" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="isaw.theme.various"
+      title="NYU ISAW Theme: miscellaneous import steps"
+      description="Various import steps that are not handled by GS import/export handlers."
+      handler="isaw.theme.setuphandlers.setupVarious">
+    <depends name="skins"/>
+  </genericsetup:importStep>
+
+</configure>

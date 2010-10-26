@@ -1,0 +1,2 @@
+recursive-include isaw *
+global-exclude *pyc
