@@ -1,0 +1,426 @@
+/* <dtml-with base_properties> (do not remove this) */
+
+/* Tabs */
+#content .formTabs {
+    background-color: &dtml-neutralColor;;
+    border: 0.3em solid &dtml-neutralColor;;
+}
+#edit-bar {
+    background-color: &dtml-contentViewBackgroundColor;;
+    border: 0.25em solid &dtml-contentViewBorderColor;;
+    font-size: &dtml-fontSmallSize;;
+    min-height: 2em;
+    margin-bottom: 1em;
+    padding-top: 0.05em;
+}
+#content-views {
+    float: left;
+    background-color: &dtml-contentViewBackgroundColor;;
+}
+#content-views a {
+    color: &dtml-contentViewFontColor;
+}
+
+/* Shared CSS between the two tab types */
+#edit-bar,
+#content .formTabs {
+    display: block;
+    border-style: solid solid none solid;
+    margin-left: 0;
+}
+#content .formTab {
+    display: inline;
+    margin-right:0.25em;
+}
+#content-views a,
+#content .formTab a {
+    line-height: 2em;
+    padding: 0 0.75em;
+    text-decoration: none;
+    border: none;
+    margin: 0;
+    display: inline-block;
+}
+#content-views .selected a,
+#content .formTab a.selected {
+    font-weight: bold;
+}
+#content-views .selected a,
+#content-views a:hover,
+#content .formTab a.selected,
+#content .formTab a:hover {
+    background: #ffffff;
+    color: #000000;
+}
+#content .formTab a.notify {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+#content .formTab a.required span {
+    background-image: url(required.png);
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding-right: 1em;
+}
+#content .formPanel {
+    border: none;
+}
+#content .formPanel.hidden {
+    display: none;
+}
+#content .formControls .hidden {
+    display: none;
+}
+
+/* Content pulldowns */
+#contentActionMenus {
+    line-height: 2em;
+    float: right;
+    background: &dtml-contentViewBackgroundColor;;
+    position: relative;
+    margin: 0;
+    top: -0.23em;
+    right:-0.24em;
+    padding: 0.1em 0.24em 0 0;
+    *clear: both;
+    *position: static;
+}
+#contentActionMenus .actionMenu a,
+#contentActionMenus .actionMenu.activated dd {
+    background-color: &dtml-contentViewBackgroundColor;;
+    color: #ffffff;
+    z-index: 5;
+}
+#contentActionMenus .actionMenu.activated dd {
+    border-bottom: 0.5em solid &dtml-contentViewBackgroundColor;;
+    right: -3px;
+}
+#contentActionMenus .actionMenu.activated dd a:hover,
+#contentActionMenus .actionMenu.activated dd .actionMenuSelected {
+    background-color: #ffffff;
+    color: #666;
+}
+#folderHeader,
+#contextHeader {
+    border-bottom: 2px solid white;
+}
+#contextHeader {
+    margin-top: 5px;
+}
+.actionMenuContent {
+    padding: 0 0.25em;
+}
+.actionMenu {
+    float: right;
+    white-space: nowrap;
+    position: relative;
+    margin-left: 0.5em;
+}
+.actionMenu a,
+.actionMenu div,
+.icons-on .actionMenu a,
+.icons-on .actionMenu div {
+    display: block;
+    white-space: nowrap;
+}
+.actionMenu dt {
+    font-weight: normal;
+}
+.arrowDownAlternative {
+    font-size: 80%;
+}
+.actionMenu.deactivated dt {
+    margin: 0 0.25em;
+}
+.actionMenu.deactivated dd {
+    display: none;
+}
+.actionMenu.activated dd {
+    position: absolute;
+    width: auto;
+    min-width: 100%;
+}
+.actionMenu.activated dt a,
+.actionMenu.activated dd a,
+.actionMenu.activated dd div {
+    margin: 0 0.25em;
+}
+
+/* Workflow Colors */
+.actionMenu .state-private {
+    background-color: #c00000;
+    padding: 1px 3px;
+}
+.portlet .state-private {
+    color: #c00000;
+}
+.actionMenu .state-pending {
+    background-color: #E59500;
+    padding: 1px 3px;
+}
+.portlet .state-pending {
+    color: #E59500;
+}
+
+/* Site Setup */
+#setup-link {
+    font-size: 90%;
+}
+
+#content .configlets {
+    margin: 1em 0;
+    list-style-image: none;
+    list-style: none;
+}
+#content .configlets li {
+    margin-bottom: 1em;
+    list-style: none;
+}
+#content .configlets li label {
+    font-weight: bold;
+}
+#content .configletDetails {
+    margin: 0em 1em 1em 3.2em;
+}
+#content .configletDetails li {
+    margin-bottom: 1em;
+    display: inline;
+}
+#content .configletDetails .configletDescription {
+    display: block;
+    color: #76797c;
+    margin: 0;
+}
+.inlineDisplay {
+    display:inline
+}
+
+/* @@rules-controlpanel */
+.controlpanel-listing {
+    width:100%;
+}
+.controlpanel-listing dl {
+    margin-top:0;
+}
+.controlpanel-listing dl dt a .trigger{
+    font-weight:normal;
+}
+.controlpanel-listing td {
+    vertical-align:top;
+}
+.controlpanel-listing td.checker{
+    text-align:center;
+}
+.controlpanel-listing th.smallcolumn {
+    width:1.5em;
+}
+.chooser-right {
+    float:right;
+    margin-right:0;
+    margin-bottom:0;
+}
+.rule-element {
+    background-color:#EEF3F5;
+    margin:0.5em 0pt 0.5em;
+    padding:0.3em 1em 0.3em 1em;
+    width:auto;
+}
+.rule-element dd {
+    margin-left:1em;
+}
+.rule-updown, .rule-operations {
+    float:right;
+    padding-top:0.8em;
+}
+
+/* Collapsible */
+.collapsible {
+    border: 1px solid &dtml-primaryColor;;
+    margin: 1em 0;
+    padding: 0;
+}
+.collapsible .collapsibleHeader {
+    display: block;
+    float: left;
+    background: #ffffff;
+    line-height: 1.2em;
+    vertical-align: middle;
+    font-size: 90%;
+    position: relative;
+    top: -0.6em;
+    width: auto;
+    margin: 0 0 -0.6em 1em;
+    padding: 0 0.5em;
+}
+.collapsible .collapsibleContent {
+    margin: 0;
+    padding: 0 1em 0.4em;
+    clear: left;
+}
+
+/* for IE the following isn't needed, that's why the css2 selector is used */
+.collapsible .collapsibleContent > dl {
+    margin: 0;
+    padding: 0;
+}
+
+.expandedInlineCollapsible .collapsibleHeader,
+.expandedBlockCollapsible .collapsibleHeader {
+    padding: 0 0.5em 0 2em;
+    background: #ffffff url(treeExpanded.png) no-repeat 0.5em 50%;
+    cursor: pointer;
+}
+
+.collapsedBlockCollapsible {
+    border: none;
+    height: 1em;
+    width: auto;
+}
+.collapsedInlineCollapsible .collapsibleHeader,
+.collapsedBlockCollapsible .collapsibleHeader {
+    float: none;
+    position: relative;
+    margin: 0 0 0 1em;
+    padding: 0 0.5em 0 2em;
+    line-height: 1.2em;
+    cursor: pointer;
+    background: #ffffff url(treeCollapsed.png) no-repeat 0.5em 50%;
+}
+.collapsedInlineCollapsible .collapsibleContent,
+.collapsedBlockCollapsible .collapsibleContent {
+    display: none;
+}
+.collapsedInlineCollapsible {
+    border: none;
+    height: 1em;
+    width: auto;
+    display: inline;
+}
+.collapsedInlineCollapsible .collapsibleHeader {
+    position: static;
+    float: none;
+    margin: 0;
+    padding: 0 0 0 2em;
+    line-height: 1em;
+    cursor: pointer;
+    display: inline;
+}
+
+/* Comments */
+.comment {
+    margin-top: 1.5em;
+    font-size: 80%;
+}
+.comment .documentByLine {
+    margin-left: 1em;
+}
+.comment .formControls {
+    margin-left: 0;
+}
+.commentTime {
+    color: #666;
+}
+.commentBody {
+    padding: 1em;
+    margin: 0.5em 0;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    box-shadow: 0 0 1em 0 #888;
+    -moz-box-shadow: 0 0 0.5em 0 #888;
+    -webkit-box-shadow: 0 0 0.5em #888;
+}
+.comment h1,
+.comment h2,
+.comment h3,
+.comment h4,
+.comment h5,
+.comment h6 {
+    font-weight: normal;
+}
+
+/* Content History */
+.reviewHistory,
+.contentHistory {
+    display: inline;
+    color: #000000;
+}
+#content-history .historyRecord {
+    margin-bottom: 1em;
+}
+#content-history .historyTools ul {
+    float: right;
+    margin: 0.5em 1em;
+}
+#content-history .historyTools ul li {
+    display: inline;
+    padding: 0 0.015em;
+}
+#content-history .historyTools form {
+    display: inline;
+}
+#content-history .historyByLine {
+    background: &dtml-neutralColor;;
+    padding: 0.5em;
+}
+#content-history .historyLinks {
+    float: right;
+    clear: right;
+    margin: 0.5em 1em 0 0;
+}
+#content-history .historyComment {
+    padding: 0.5em 1em;
+    border: 1px solid &dtml-neutralColor;;
+}
+#content-history .historyComment p {
+    margin: 0;
+    padding-top: 1px;
+}
+#content-history .historyComparePrevious {
+    border-top: 1px dotted #ccc;
+    display: block;
+    margin-top: 3em;
+    text-align: center;
+}
+#content-history .historyComparePrevious span {
+    background-color: white;
+    position: relative;
+    top: -0.75em;
+    padding: 0 0.5em;
+}
+
+/* Dashboard */
+#dashboard-actions ul,
+#dashboard-actions ul li {
+    list-style: none none;
+}
+#dashboard-actions ul {
+    margin-left: 0;
+}
+#dashboard {
+    font-size: 125%;
+    line-height: 1em;
+}
+#dashboard dd {
+    margin: 0;
+}
+#dashboard .portlet a {
+    border-bottom: none;
+}
+#dashboard-portlets1,
+#dashboard-portlets2,
+#dashboard-portlets3,
+#dashboard-portlets4 {
+    float: left;
+    width: 23%;
+    padding: 0.7em 1.3em 0 0;
+    display: inline-block;
+}
+#dashboard-portlets1 .portlet,
+#dashboard-portlets2 .portlet,
+#dashboard-portlets3 .portlet,
+#dashboard-portlets4 .portlet {
+    margin-bottom: 1.5em;
+}
+
+/* </dtml-with> */

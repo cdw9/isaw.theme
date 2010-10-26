@@ -1,6 +1,6 @@
-title:string=Plone Simple's color, font, logo and border defaults
+title:string=Plone Basic's color, font, logo and border defaults
 
-plone_skin:string=Plone Simple
+plone_skin:string=Plone Basic
 
 logoName:string=logo.png
 
@@ -22,6 +22,10 @@ borderWidth:string=1px
 borderStyle:string=solid
 borderStyleAnnotations:string=dashed
 
+globalBorderColor:string=#205C90
+globalBackgroundColor:string=#eeeeee
+globalFontColor:string=#333333
+
 headingFontFamily:string=Verdana, Arial, sans-serif
 headingColor:string=#333333
 
@@ -30,6 +34,8 @@ contentViewBackgroundColor:string=#75AD0A
 contentViewFontColor:string=#ffffff
 
 inputFontColor:string=#000000
+
+textTransform:string=none
 
 highlightColor:string=#ffffe0
 

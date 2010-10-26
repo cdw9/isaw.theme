@@ -1,0 +1,181 @@
+/* <dtml-with base_properties> (do not remove this) */
+
+/* general portlet styles */
+.portlet {
+    margin: 0 0 1em;
+}
+.portlet p,
+.portlet {
+    margin-bottom: 1em;
+}
+.portletError {
+    background-color: #FFA500;
+}
+.portlet dt,
+.portletAssignments .portletHeader {
+    padding: 0.5em 1em;
+    background: &dtml-neutralColor;;
+}
+.portlet dt a,
+.portlet dt a:visited,
+.portlet dt a:hover {
+    color: #000000;
+}
+.portlet .portletItem,
+.portletError dd {
+    padding: 1em;
+}
+.portlet .portletFooter {
+    padding: .5em 1em;
+}
+.portletItemDetails { 
+	font-size: &dtml-fontSmallSize;;
+	padding-top: .5em;
+    line-height: 1.5em;
+    margin-left: 1em;
+    display: block;
+}
+
+/* manage portlet link */
+.managePortletsLink,
+a.managePortletsFallback {
+    text-align: center;
+    padding: 0.25em;
+    font-size: &dtml-fontSmallSize;;
+    margin: 0 auto 1em;
+    background: &dtml-neutralColor;;
+}
+a.managePortletsFallback {
+    display: inline-block;
+}
+#content a.managePortletsFallback {
+    display: block;
+}
+
+/* @@ manage-portlets */
+.managedPortlet {
+    margin: 0.8em 0;
+}
+.blockedPortlet .portletHeader {
+    border: 1px dashed #ddd;
+    margin: -1px;
+    background: none;
+}
+.blockedPortlet .portletHeader a {
+    color: #666;
+}
+.blockedPortlet .portletBlockedMessage {
+    color: white;
+    display: inline;
+}
+.portletAssignments {
+    font-size: 0.8em;
+    line-height: 2em;
+}
+.portletAssignments .managedPortletActions {
+    float: right;
+}
+.portletAssignments .managedPortletActions a {
+    margin: 0 0.25em;
+    border: none;
+}
+
+/* site setup prefs portlet */
+#portlet-prefs a {
+    line-height: 2em;
+}
+
+/* navigation portlet */
+.portlet .navTree li {
+    margin-bottom: 0;
+}
+.portlet .navTree a {
+    border: none;
+    display: block;
+    padding: 0 1em;
+}
+.portletNavigationTree .portletItem {
+    padding: 0;
+}
+.portlet .navTreeLevel0 > .navTreeItem {
+    border-bottom: 1px dotted #333333;
+}
+.portlet .navTreeLevel1 .navTreeItem {
+    padding-left: 0.5em;
+}
+.portlet .navTree .navTreeCurrentItem {
+    background-color: &dtml-neutralColor;;
+}
+.icons-on .portlet .navTree .contenttype-file,
+.icons-on .portlet .navTree .contenttype-image {
+    line-height: 2em;
+    padding-left: 0px;
+}
+
+/* search portlet */
+.portletSearch .LSResult {
+    margin-top: 0;
+    font-size: &dtml-fontSmallSize;;
+}
+
+/* calendar portlet */
+.portletCalendar {
+    margin: 1px 0 1em 0;
+}
+.portletCalendar dt {
+    background-color: &dtml-neutralColor;;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6em;
+    border-bottom: none;
+}
+.portlet.portletCalendar dd {
+    margin: 0;
+    padding: 0;
+}
+.portletCalendar dt a#calendar-previous {
+    padding: 0 1em;
+    margin: 0 -.5em;
+}
+.portletCalendar dt a#calendar-next {
+    padding: 0 1em;
+    margin: 0 -.5em;
+}
+.portletCalendar a, .portletCalendar a:focus,
+.portletCalendar a, .portletCalendar a:hover {
+    text-decoration: none;
+}
+.ploneCalendar {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+.ploneCalendar a {
+    text-decoration: none;
+}
+.ploneCalendar td {
+    background-color: transparent;
+    width: 14%;
+    text-align: center;
+    padding: 2px;
+}
+.ploneCalendar .weekdays th {
+    background-color: #eee;
+    text-align: center;
+    padding: 2px;
+    font-weight: normal;
+}
+.ploneCalendar .event {
+    background-color: &dtml-neutralColor;;
+    font-weight: bold;
+}
+.ploneCalendar .todayevent {
+    background-color: &dtml-neutralColor;;
+    border: 2px solid &dtml-primaryColor;;
+    font-weight: bold;
+}
+.ploneCalendar .todaynoevent {
+    border: 2px solid &dtml-primaryColor;;
+}
+
+/* </dtml-with> */

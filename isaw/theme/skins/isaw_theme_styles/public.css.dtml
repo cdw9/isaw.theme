@@ -1,0 +1,1057 @@
+/* <dtml-with base_properties> (do not remove this) */
+
+/* CSS Reset */
+
+/* Remove implicit browser styles to have a neutral starting point:
+   - No elements should have implicit margin/padding
+   - No underline by default on links (we add it explicitly in the body text)
+   - When we want markers on lists, we will be explicit about it, and they render inline by default
+   - Browsers are inconsistent about hX/pre/code, reset
+   - Linked images should not have borders
+   */
+
+* { margin: 0; padding: 0; }
+* :link,:visited { text-decoration:none }
+* ul,ol { list-style:none; }
+* li { display: inline; }
+* h1,h2,h3,h4,h5,h6,pre,code { font-size: &dtml-fontBaseSize;; }
+* a img,:link img,:visited img { border:none }
+a { outline: none; }
+table { border-spacing: 0; }
+img { vertical-align: text-bottom; }
+
+
+/* BASICS                                                               */
+
+body {
+    font: &dtml-fontBaseSize; &dtml-fontFamily;;
+    background-color: &dtml-backgroundColor;;
+    color: &dtml-fontColor;;
+}
+body.largeText {
+    font-size: 125%;
+}
+body.smallText {
+    font-size: 85%;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: &dtml-headingFontFamily;;
+    font-weight: bold;
+    color: &dtml-headingColor;;
+    line-height: 1.5em;
+}
+h1 {
+    font-size: 22px;
+}
+h2 {
+    font-size: 18px;
+}
+h3 {
+    font-size: 16px;
+}
+h4 {
+    font-size: 14px;
+}
+h5 {
+    font-size: 12px;
+}
+h6 {
+    font-size: 10px;
+}
+a,
+a:visited {
+    color: &dtml-linkColor;;
+}
+a:active {
+    color: &dtml-linkActiveColor;;
+}
+a:hover {
+    color: &dtml-linkHoverColor;;
+}
+a:focus img {
+    outline: none;
+}
+dt {
+    font-weight: bold;
+}
+input {
+    font-family: &dtml-fontFamily;;
+}
+td {
+    vertical-align: top;
+}
+
+/* Invisibles */
+.hiddenStructure {
+    display: none;
+    background: transparent;
+    background-image: none; /* safari bug */
+    border: none;
+    height: 0.1em;
+    overflow: hidden;
+    padding: 0;
+    margin: -0.1em 0 0 -0.1em;
+    width: 1px;
+}
+#content .visualNoMarker {
+    list-style:none;
+    margin-left: 0;
+}
+.visualClear {
+    clear: both;
+}
+
+/* Plone elements */
+#visual-portal-wrapper {
+    padding: 0 10px;
+}
+#portal-header {
+    position: relative;
+    z-index: 2;
+}
+#portal-columns {
+    width: 100%;
+}
+#portal-column-one {
+    width: &dtml-columnOneWidth;;
+}
+#portal-column-one .visualPadding {
+    padding-right: 1em;
+}
+#portal-column-two {
+    width: &dtml-columnTwoWidth;;
+}
+#portal-column-two .visualPadding {
+    padding-left: 1em;
+}
+
+/* VIEWLETS                                                             */
+
+/* logo */
+#portal-logo {
+    margin: 10px 0;
+    float: left;
+}
+
+/* global nav */
+#portal-globalnav {
+    clear: both;
+    background: &dtml-neutralColor;;
+    margin: 0 0 10px 0;
+}
+#portal-globalnav a {
+    display: inline-block;
+    padding: 10px;
+    background: &dtml-neutralColor;;
+    white-space: normal;
+    border-right: &dtml-borderWidth; &dtml-borderStyle; white;
+}
+#portal-globalnav .selected a,
+#portal-globalnav a:hover {
+    background: &dtml-primaryColor;;
+    color: #ffffff;
+}
+
+/* personal tools */
+#portal-personaltools {
+    float: right;
+    background: #eeeeee;
+    position: relative;
+    z-index: 3; /* personaltools should be above #portal-header (with z-index: 2) */
+    top: 0;
+    right: 0;
+}
+#portal-personaltools .actionMenuHeader {
+    font-weight: normal;
+    padding: 0.25em 0.5em;
+}
+#portal-personaltools .actionMenuHeader a:after {
+    content: " ▼";
+}
+#portal-personaltools .actionMenuContent {
+    right: 0;
+    padding-top: 0.5em;
+}
+#portal-personaltools .actionMenuContent {
+    background: #eeeeee;
+    padding-bottom: 0.5em;
+    line-height: 2em;
+}
+#portal-personaltools .actionMenuContent a {
+    padding: 0 0.75em;
+}
+#portal-personaltools .actionMenuContent a:hover {
+    background: &dtml-primaryColor;;
+    color: #ffffff;
+}
+
+/* language selector */
+#portal-languageselector {
+    float: right;
+    background: #eeeeee;
+    position: relative;
+    top: 0;
+    right: 1px;
+    z-index: 3; /* portal-header has 2 and we need to be above to be clickable */
+    padding: 0.25em 0.5em;
+    font-size: 80%;
+    max-width: 50%;
+}
+
+/* searchbox */
+#portal-searchbox {
+    float: right;
+    text-align: left;
+    clear: right;
+    margin: 1.2em 0;
+    font-size: &dtml-fontSmallSize;;
+    padding-right: 5px;
+}
+#portal-searchbox label {
+    font-weight: normal;
+}
+#searchGadget {
+    width: 13em;
+}
+#content .searchField {
+    margin-bottom: 1em;
+}
+.searchSection {
+    color: #666666;
+    margin-top: 0.25em;
+}
+.searchSection label:hover {
+    color: #000000;
+}
+/* Collapsible elements in search_form */
+.collapsible .collapser.collapsed {
+    padding-right: 14px;
+    background: url('arrowRight.png') center right no-repeat;
+}
+.collapsible .collapser.expanded {
+    padding-right: 14px;
+    background: url('arrowDown.png') center right no-repeat;
+}
+.LSResult {
+    position: absolute;
+    right: 0;
+    background: #ffffff;
+    margin: -1.5em 0 0 -7em;
+}
+.livesearchContainer {
+    padding: 1em 0 0;
+    border: &dtml-borderWidth; &dtml-borderStyle; #ccc;
+}
+#livesearchLegend {
+    background-color:#ccc;
+    padding:0.3em;
+}
+.LSResult .LSDescr {
+    font-size: 85%;
+    color: #666;
+}
+.LSRow,
+#LSNothingFound {
+    display: block;
+    padding: 0.5em 1em;
+    white-space: normal;
+    width:28em;
+}
+.LSHighlight {
+    background: &dtml-neutralColor;;
+}
+
+/* breadcrumbs */
+#portal-breadcrumbs {
+    margin-bottom: 1em;
+    margin-left: 0.25em;
+}
+#portal-breadcrumbs a {
+    display: inline-block;
+}
+
+/* site actions */
+#portal-siteactions {
+    font-size: &dtml-fontSmallSize;;
+    padding-bottom: 2em;
+    text-align: center;
+}
+#portal-siteactions li {
+    margin-right: 0.5em;
+}
+
+/* footer */
+#portal-footer {
+    background: &dtml-neutralColor;;
+    padding: 1em;
+    margin: 1em 0;
+    line-height: 2em;
+}
+#portal-colophon {
+    font-size: 90%;
+    text-align: center;
+    margin-bottom: 1em;
+}
+#portal-colophon li {
+    padding: 0 0.75em;
+}
+
+/* CONTENT AREA                                                              */
+#content {
+    line-height: 1.5em;
+    clear: both;
+    margin: 1em 0.25em 2em 0.25em;
+}
+/* Special case of #content - TinyMCE */
+body#content {
+    margin: 1em;
+}
+#content h1 {
+    margin-top: 0.5em;
+}
+#content .documentFirstHeading {
+    margin-top: 0;
+}
+#content p,
+#content table,
+#content dl {
+    margin-bottom: 1em;
+}
+#content a:target {
+    background-color: #ffb;
+}
+#content span.link-external a {
+    background: transparent url(link_icon.png) 0px 1px no-repeat;
+    padding: 1px 0px 1px 16px;
+}
+#content ul {
+    list-style-type: disc;
+    margin-left: 2em;
+}
+#content ol,
+.portlet ol {
+    list-style-type: decimal;
+    margin-left: 2em;
+}
+#content li,
+.portlet li {
+    margin-bottom: 0.25em;
+    line-height: 1.5em;
+    display: list-item;
+}
+#content dt {
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+#content dd {
+    margin: 0 0 1em 2em;
+}
+#content pre {
+    background-color: #222;
+    color: #ffffff;
+    font-family: "Courier New", monospace;
+    padding: 1em;
+    overflow-x: auto;
+    font-size: 90%;
+    margin-bottom: 1em;
+    line-height: 1.25em;
+}
+#content pre.python {
+    background-color: #ffffff;
+}
+#content code {
+    font-family: "Courier New", monospace;
+}
+#content .documentByLine {
+    font-size: &dtml-fontSmallSize;;
+    color: #666;
+}
+#content .discreet,
+#sidebar .discreet {
+    color: #666;
+    font-size: &dtml-fontSmallSize;;
+    font-weight: normal;
+}
+#content .visualHighlight {
+    background-color: #ffb;
+}
+#content .pullquote {
+    margin: 0 1em 0.5em 0.5em;
+    font-weight: bold;
+    line-height: 1.25em;
+    float: right;
+    width: 35%;
+    clear: right;
+    color: #444;
+    font-size: 1.6em;
+    letter-spacing: -0.08em;
+}
+#content .callout {
+    background: #eee;
+    padding: 1em;
+    border-left: 1em solid #ccc;
+    clear: both;
+}
+#content table {
+    text-align: left;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+#content .documentDescription,
+#content #description {
+    color: #666;
+    font: bold 1.25em &dtml-fontFamily;;
+}
+
+#content .tileImage,
+#content .newsImageContainer {
+    float: right;
+    margin: 0 1em 0.5em 1em;
+}
+#content .newsImageContainer .discreet {
+    margin: 0;
+    padding: 0.5em;
+    background-color: #666;
+    color: #ffffff;
+    font-weight: bold;
+    width: 190px;
+}
+
+/* DATA TABLES                                                               */
+
+.listing,
+table.plain {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.invisible td,
+.invisible th,
+.plain td,
+.plain th,
+.listing td,
+.listing th {
+    padding: 0.5em 1em;
+    vertical-align: top;
+}
+.plain th,
+.plain td {
+    border: &dtml-borderWidth; &dtml-borderStyle; &dtml-neutralColor;;
+}
+
+.listing .listingCheckbox {
+    text-align: center;
+}
+
+.listing th {
+    text-align: left;
+    color: #666;
+    border: &dtml-borderWidth; &dtml-borderStyle; #e7e7e7;
+    border-style: &dtml-borderStyle; none none;
+}
+.listing .odd th {
+    border: &dtml-borderWidth; &dtml-borderStyle; #fff;
+    border-style: &dtml-borderStyle; &dtml-borderStyle; none none;
+}
+.listing th {
+    font-weight: bold;
+}
+.listing tr {
+    text-align:left;
+}
+.listing .odd {
+    background: &dtml-oddRowBackgroundColor;;
+}
+.listing td {
+    background: transparent;
+}
+.listing .odd td {
+    background: &dtml-oddRowBackgroundColor;;
+}
+.listing a {
+    line-height: 2em;
+    display: inline-block;
+}
+.listing td.draggable,
+.listing .odd td.draggable {
+    text-shadow: #ffffff 1px 1px 1px;
+    background: &dtml-neutralColor;;
+    border-bottom: &dtml-borderWidth; &dtml-borderStyle; #ffffff;
+    padding: 0.4em 0.4em 0 0.5em;
+}
+.listing .odd.selected td,
+tr.selected {
+    background-color: #ffa;
+}
+/* Vertical table data listings */
+.vertical {
+}
+.vertical th {
+    text-align: right;
+}
+.vertical td {
+    border-top: &dtml-borderWidth; &dtml-borderStyle; #e7e7e7;
+    padding: 0.5em;
+}
+/* Grid table listings */
+.grid td,
+.grid th {
+    border: &dtml-borderWidth; &dtml-borderStyle; #e7e7e7;
+    padding: 0.5em;
+}
+.dragindicator {
+    outline: 2px &dtml-borderStyle; #FFD700;
+}
+
+#foldercontents-order-column {
+    padding: 0;
+}
+
+/* MISC ELEMENTS                                                             */
+
+/* navigation */
+.listingBar {
+    font-size: 80%;
+    margin: 1em 0;
+}
+.listingBar .next {
+    display: inline-block;
+    float: right;
+}
+.listingBar .previous {
+    display: inline-block;
+}
+.listingBar a {
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    border: &dtml-borderWidth; &dtml-borderStyle; #ccc;
+}
+.listingBar a:hover {
+    color: #ffffff;
+    background-color: #329fd7;
+    border-color: #329fd7;
+}
+
+/* Status messages */
+.portalMessage {
+    margin: 1em 0;
+    font-size: &dtml-fontSmallSize;;
+    border: &dtml-borderWidth; &dtml-borderStyle; &dtml-notifyBorderColor;;
+    background-color: &dtml-notifyBackgroundColor;;
+    clear: both;
+}
+.portalMessage dt {
+    background-color: &dtml-notifyBorderColor;;
+    font-weight: bold;
+    float: left;
+    margin: 0 0.5em 0 0;
+    padding: 0.5em 0.75em;
+    color: #ffffff;
+    line-height: 1.25em;
+}
+.portalMessage dd {
+    padding: 0.5em 0.5em;
+    margin: 0;
+    line-height: 1.25em;
+}
+.warning {
+    border-color: #d80;
+}
+.warning dt {
+    background-color: #d80;
+}
+.warning dd {
+    background-color: #fd7;
+}
+.error {
+    border-color: #d00;
+}
+.error dt {
+    background-color: #d00;
+}
+.error dd {
+    background-color: #fdc;
+}
+#content .portalMessage dt {
+    margin: 0 0.5em 0 0;
+    padding: 0.5em 0.75em;
+}
+#content .portalMessage dd {
+    margin: 0;
+}
+
+.spacer {
+    margin: 1em;
+}
+.label {
+    font-weight: bold;
+    display: inline;
+    padding-right: 0.5em;
+}
+.optionsToggle {
+    border: &dtml-borderWidth; &dtml-borderStyle; #8cacbb;
+    color: #000000;
+    background-color: #dee7ec;
+    font-weight: normal;
+    font-size: 90%;
+}
+
+/* Table of Contents */
+.toc {
+    float: right;
+    width: 35%;
+    margin: 1em 0 0.5em 1.5em;
+}
+.toc dt {
+    margin-left: 1em;
+    font-weight: normal;
+}
+.toc dd {
+    margin-bottom: 0;
+    padding-left: 2em;
+}
+.toc dd ol {
+    margin-left: 1.5em;
+}
+
+/* keywords/categories */
+#category {
+    font-size: &dtml-fontSmallSize;;
+    margin-bottom: 1em;
+    color: #666;
+    text-align: right;
+}
+#category .link-category {
+    color: #000000;
+    padding: 0.25em 0.5em;
+    background: &dtml-neutralColor;;
+}
+#category .link-category:hover {
+    background: &dtml-primaryColor;;
+    color: #ffffff;
+}
+#category .separator {
+    display: none;
+}
+
+/* highlighting */
+.highlightedSearchTerm {
+   background-color: &dtml-highlightColor;;
+}
+.searchResults .highlightedSearchTerm {
+    background-color: transparent;
+    font-weight: bold;
+}
+.noInheritedRoles {
+    color: #a0a0a0;
+}
+.currentItem {
+    border-collapse: collapse;
+    border: 0.2em &dtml-borderStyle; #ffa500;
+    padding: 0.1em;
+}
+
+/* Image alignment classes */
+.image-left {
+   float: left;
+   clear: both;
+   margin: 0.5em 1em 0.5em 0;
+}
+.image-right {
+   float: right;
+   clear: both;
+   margin: 0.5em;
+}
+.image-inline {
+   float: none;
+}
+/*note: the tricky thing here is that image-inline|image-left|image-right
+can both be on an image and a wrapper element e.g. a dl tag*/
+img.image-left,
+img.image-right,
+.captioned img {
+    border: &dtml-borderWidth; &dtml-borderStyle; &dtml-neutralColor;;
+}
+.image-caption {
+    text-align: left;
+    padding: 0 0 0 3px; /*image padding+border with*/
+    margin: 0;
+    color: #666;
+    font-size: 85%;
+}
+
+/* styles for when icons are visible.  Setting can be changed in @@skins-controlpanel */
+.icons-on .contenttype-document {
+    background: no-repeat transparent 0px 4px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-event {
+    background: no-repeat transparent 0px -212px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-folder {
+    background: no-repeat transparent 0px -644px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-link {
+    background: no-repeat transparent 0px -1076px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-news-item {
+    background: no-repeat transparent 0px -1292px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-plone-site {
+    background: no-repeat transparent 0px -1508px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-topic {
+    background: no-repeat transparent 0px -1724px url(contenttypes-sprite.png);
+}
+.icons-on #plone-contentmenu-factories .contenttype-file {
+    background: no-repeat transparent 0px -428px url(contenttypes-sprite.png);
+}
+.icons-on #plone-contentmenu-factories .contenttype-image {
+    background: no-repeat transparent 0px -860px url(contenttypes-sprite.png);
+}
+.icons-on .contenttype-document,
+.icons-on .contenttype-event,
+.icons-on .contenttype-folder,
+.icons-on .contenttype-link,
+.icons-on .contenttype-news-item,
+.icons-on .contenttype-plone-site,
+.icons-on .contenttype-topic {
+    line-height: 2em;
+    padding-left: 20px !important;
+    display: inline-block;
+}
+.icons-on #plone-contentmenu-factories .contenttype-file,
+.icons-on #plone-contentmenu-factories .contenttype-image {
+    line-height: 2em;
+    padding-left: 20px !important;
+    display: block;
+}
+
+/* Forms                                                                      */
+fieldset,
+.editionComment {
+    line-height:1.5em;
+    margin:1em 0;
+    padding:0 1em 1em;
+    width:auto;
+}
+#archetypes-fieldname-title input {
+    font-family: &dtml-headingFontFamily;;
+    line-height: 125%;
+    color: &dtml-inputFontColor;;
+    letter-spacing: -0.05em;
+    margin: inherit -0.05em;
+    font-size: 2em;
+    font-weight: bold;
+}
+#archetypes-fieldname-description #description {
+    font-family: &dtml-fontFamily;;
+    color:#666666;
+    font-size:1.25em;
+    font-weight: bold;
+}
+.formControls {
+    margin: 1em;
+}
+#content textarea {
+    font-family: "Courier New", Courier, monospace;
+    width: 100%;
+}
+#content select {
+    vertical-align: top;
+}
+#content fieldset {
+    border: &dtml-borderWidth; &dtml-borderStyle; &dtml-primaryColor;;
+    border-style: &dtml-borderStyle; none none none;
+}
+#content legend {
+    padding: 0.5em;
+    font-size: &dtml-fontSmallSize;;
+}
+label {
+    font-weight: bold;
+}
+#content optgroup {
+    font-style: normal;
+    font-weight: bold;
+    color: #999;
+    padding-left: 0.25em;
+}
+#content option {
+    color: #000000;
+}
+#content optgroup > option {
+    padding: 0 0.25em 0 1em;
+}
+.enableFormTabbing dd {
+    margin-left: 0;
+    padding-top: 2em;
+}
+.field {
+    clear: both;
+    margin-bottom: 1em;
+}
+#title {
+    width: 100%;
+}
+.error #title {
+    width: 99%;
+}
+#subject {
+    width: 100%;
+}
+.fieldRequired {
+    background: url(required.png) center left no-repeat;
+    padding: 0 0 0 1em;
+    color: #ffffff;
+}
+.fieldUploadFile {
+    text-align: right;
+    margin-right: 0.75em;
+    display: none;
+}
+.fieldTextFormat {
+    text-align: right;
+    margin-right: 0.75em
+}
+.formHelp {
+    color: #555;
+    margin: 0 0 0.2em 0;
+}
+div.error {
+    background-color: #fdc;
+    border:  &dtml-borderWidth; &dtml-borderStyle; red;
+    padding: 0.5em;
+    margin:  1em 0;
+}
+.error .fieldRequired {
+    color: #d00;
+}
+.error.warning {
+    background-color: transparent;
+    border: none;
+    margin-top: 0;
+    padding: 0;
+}
+.error.warning input {
+    border: 2px solid red;
+}
+.inputLabelActive {
+    color: #76797c;
+}
+
+/* Login Form */
+.template-logged_out #content,
+.template-login_form #content,
+.pb-ajax #login-form {
+    text-align: center;
+}
+#fieldset-openid-login input,
+#login-form input {
+    font-size: 150%;
+}
+.template-register #content input,
+.template-new-user #content input {
+    font-size: 150%;
+    width: inherit;
+}
+#fieldset-openid-login label, #login-form label {
+    margin-right:0.5em;
+    padding-top:0.2em;
+    text-align:right;
+    width: 10em;
+    display: inline-block;
+}
+#fieldset-openid-login .formControls input,
+#login-form .formControls input {
+    margin-left: 0.25em;
+}
+
+/* TEMPLATES                                                                 */
+
+/* folder listings */
+#content .link-overlay {
+    border-bottom: 1px dotted &dtml-primaryColor;;
+}
+dt .documentByLine {
+    font-weight: normal;
+}
+
+/* search results page */
+form.searchPage {
+    text-align: center;
+}
+input.searchPage {
+    font-size: 200%;
+}
+
+/* Sitemap */
+#portal-sitemap {
+    list-style: none;
+    margin-left: 0;
+    font-size: 130%;
+    font-weight: bold;
+}
+#portal-sitemap li {
+    list-style: none;
+    margin-left: 0;
+}
+#portal-sitemap a {
+    border-bottom: none;
+    display: block;
+}
+#portal-sitemap > li {
+    border-bottom: &dtml-borderWidth; dotted &dtml-neutralColor;;
+    line-height: 1.8em;
+    padding: 0.25em 1em;
+    margin-bottom: 0;
+}
+#portal-sitemap .navTreeLevel2,
+#portal-sitemap .navTreeLevel2 ul {
+    font-size: 85%;
+    font-weight: normal;
+    margin-bottom: 0;
+    padding: 0.25em 0;
+}
+
+/* Events */
+.eventDetails {
+    float: right;
+    clear: right;
+    margin: 0 0 0.5em 1em;
+}
+
+/* Album view classes */
+.photoAlbumEntry {
+    float: left;
+    position:relative;
+    overflow: hidden;
+    height: 185px;
+    width: 143px;
+    margin: 0em;
+    padding: 0px 6px 0px 9px;
+    text-align: center;
+    background-image: url('polaroid-single.png');
+    background-repeat: no-repeat;
+}
+.photoAlbumEntry img {
+    border: &dtml-borderWidth; &dtml-borderStyle; #ccc;
+    display: block;
+    margin: 0 auto;
+}
+.photoAlbumEntryWrapper {
+    height: 130px;
+    width: 128px;
+    margin-bottom: 7px;
+}
+.photoAlbumEntry a {
+    display: block;
+    text-decoration: none;
+    font-size: 90%;
+    height: 169px;
+    width: 130px;
+    margin: 16px auto 0px;
+}
+.photoAlbumFolder {
+    background-image: url('polaroid-multi.png');
+    background-repeat: no-repeat;
+}
+.photoAlbumEntryTitle {
+    color: #76797c;
+    display: block;
+    width: 128px;
+    height: 3.6em;
+}
+
+/* Overlays                                                                  */
+
+/* styling for overlays (popups) */
+.overlay {
+    width: auto;
+    height: auto;
+    display: none;
+    margin: 1em;
+    font-size: 80%;
+}
+.overlay-iframe,
+.overlay-ajax {
+    width: 60%;
+    min-height: 100px;
+    z-index: 99;
+}
+.overlay-iframe {
+    height: 60%;
+}
+.overlaybg .close,
+.overlay .close {
+    background-image: url(pb_close.png);
+    position: absolute;
+    left: -14px;
+    top: -14px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+.pb-ajax {
+    overflow-y: auto;
+}
+.pb-ajax, .pb-image {
+    background-color: #fff;
+    border: &dtml-borderWidth; &dtml-borderStyle; #999;
+    white-space: normal;
+    box-shadow: 0 0 3em 0.5em #666;
+    -moz-box-shadow: 0 0 3em 0.5em #666;
+    -webkit-box-shadow: 0 0 3em #666;
+}
+.pb-ajax > div {
+    width: 92%;
+    padding: 1em;
+}
+.pb-ajax .documentActions {
+    display: none;
+}
+.overlay .close span {
+    display: block;
+    height: 1px;
+    margin: -1px 0 0 -1px;
+    overflow: hidden;
+    padding: 0;
+    width: 1px;
+}
+.overlay textarea {
+    width: 100%;
+}
+.overlay .link-parent,
+.overlay #createGroup legend {
+    display: none;
+}
+.overlay #createGroup fieldset {
+    border: none;
+}
+
+/* lets play nice with paragraphs, links, tabbed pages in overlay e.g. when plone.openid is installed */
+.overlay p {
+    margin-bottom: 1em;
+}
+.overlay label {
+    margin-bottom: 0.25em;
+}
+.overlay a:hover {
+    color: &dtml-linkHoverColor;;
+}
+.overlay a.selected {
+    color: #000000;
+}
+.overlay .formTab {
+    margin-right:1em;
+    font-weight: bold;
+}
+.overlay .formTab.lastFormTab {
+    margin-right:0em;
+}
+.overlay .formControls a {
+    display: block;
+    margin: 0.75em;
+}
+
+/* </dtml-with> */
