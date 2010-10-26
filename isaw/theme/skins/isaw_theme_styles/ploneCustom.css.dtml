@@ -24,6 +24,26 @@ body {
     width: 575px;
 }
 
+/* search */
+#searchGadget {
+    border: 1px solid #a7a4a0;
+    background-color: #eeece7;
+    font-size: &dtml-fontSmallSize;;
+    height: 13px;
+    *height: 18px;
+    padding-left: 3px;
+}
+
+.searchButton {
+    border: none;
+    background-color: #a7a4a0;
+    cursor: pointer;
+}
+
+#portal-searchbox .searchSection {
+    display: none;
+}
+
 /* logo */
 #isaw-logo {
     position: absolute;
@@ -32,6 +52,7 @@ body {
 
 #portal-logo {
     margin-left: 8px;
+    float: none;
 }
 
 

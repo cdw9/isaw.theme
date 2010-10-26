@@ -204,7 +204,7 @@ td {
     text-align: left;
     clear: right;
     margin: 1.2em 0;
-    font-size: &dtml-fontSmallSize;;
+    font-size: &dtml-fontBaseSize;;
     padding-right: 5px;
 }
 #portal-searchbox label {
@@ -235,12 +235,13 @@ td {
 .LSResult {
     position: absolute;
     right: 0;
-    background: #ffffff;
     margin: -1.5em 0 0 -7em;
+    *margin-top: 10px;
 }
 .livesearchContainer {
     padding: 1em 0 0;
     border: &dtml-borderWidth; &dtml-borderStyle; #ccc;
+    background: #ffffff;
 }
 #livesearchLegend {
     background-color:#ccc;
