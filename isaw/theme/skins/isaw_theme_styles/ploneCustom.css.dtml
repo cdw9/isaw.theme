@@ -9,7 +9,7 @@ body {
 
 #visual-portal-wrapper {
     width: 932px;
-    margin: 20px auto;
+    margin: 25px auto;
     background: transparent url(&dtml-portal_url;/site_bg.png) repeat-y;
     padding: 0 0 0 64px;
 }
@@ -22,6 +22,51 @@ body {
 
 #content-left.hasRightCol {
     width: 575px;
+}
+
+/* VIEWLETS */
+
+/* personal bar */
+#portal-personaltools-wrapper {
+    position: absolute;
+    margin: -20px 0 0 -11px;
+    padding-right: 15px;
+    width: 927px;
+    text-align: right;
+    background: url(&dtml-portal_url;/site_top.png) no-repeat 0 10px;
+    height: 25px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+#portal-personaltools {
+    background: transparent;
+    margin-left: 0;
+}
+
+#portal-personaltools .actionMenuHeader {
+    padding: 0;
+}
+
+#header-links a,
+#portal-personaltools a {
+    color: #ffffff;
+}
+
+#header-links a:hover,
+#portal-personaltools a:hover {
+    color: &dtml-neutralColor;;
+}
+
+#portal-personaltools .actionMenuContent a {
+    color: &dtml-primaryColor;;
+}
+
+#header-links {
+    float: right;
+}
+
+#header-links li {
+    margin-right: 15px;
 }
 
 /* search */
@@ -51,8 +96,11 @@ body {
 }
 
 #portal-logo {
-    margin-left: 8px;
     float: none;
+}
+
+#portal-logo img {
+    margin-left: 8px;
 }
 
 
