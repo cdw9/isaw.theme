@@ -143,6 +143,20 @@ body {
     margin: 0 0 30px 8px;
 }
 
+/* breadcrumbs */
+#portal-breadcrumbs {
+    font-size: &dtml-fontSmallSize;;
+    color: #666666;
+}
+
+#portal-breadcrumbs a {
+    color: #666666;
+}
+
+#breadcrumbs-current {
+    color: #333333;
+}
+
 /* global nav */
 #portal-column-nav {
     width: 133px;
