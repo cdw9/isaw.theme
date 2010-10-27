@@ -30,7 +30,7 @@
   <browser:viewlet
       name="plone.global_sections"
       manager=".interfaces.ILeftCol"
-      class="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
+      class="webcouturier.dropdownmenu.browser.dropdown.DropdownMenuViewlet"
       permission="zope2.View"
       layer=".interfaces.IThemeSpecific"
       />
