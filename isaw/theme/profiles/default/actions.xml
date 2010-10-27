@@ -20,4 +20,68 @@
    <property name="visible">False</property>
   </object>
  </object>
+ 
+ <object name="site_actions" meta_type="CMF Action Category">
+   <property name="title"></property>
+   <object name="nyuhome" meta_type="CMF Action" i18n:domain="plone">
+    <property name="title" i18n:translate="">NYU Home</property>
+    <property name="description" i18n:translate=""></property>
+    <property
+       name="url_expr">string:http://www.nyu.edu/</property>
+    <property name="link_target"></property>
+    <property name="icon_expr"></property>
+    <property name="available_expr"></property>
+    <property name="permissions">
+     <element value="View"/>
+    </property>
+    <property name="visible">True</property>
+   </object>
+   <object name="privacy" meta_type="CMF Action" i18n:domain="plone" insert-after="nyuhome">
+    <property name="title" i18n:translate="">Privacy Policy</property>
+    <property name="description" i18n:translate=""></property>
+    <property
+       name="url_expr">string:${globals_view/navigationRootUrl}/privacy</property>
+    <property name="link_target"></property>
+    <property name="icon_expr"></property>
+    <property name="available_expr"></property>
+    <property name="permissions">
+     <element value="View"/>
+    </property>
+    <property name="visible">True</property>
+   </object>
+   <object name="sitemap" meta_type="CMF Action" i18n:domain="plone" insert-after="privacy">
+    <property name="title" i18n:translate="">Site Map</property>
+    <property name="description" i18n:translate=""></property>
+    <property
+       name="url_expr">string:${globals_view/navigationRootUrl}/sitemap</property>
+    <property name="link_target"></property>
+    <property name="icon_expr"></property>
+    <property name="available_expr"></property>
+    <property name="permissions">
+     <element value="View"/>
+    </property>
+    <property name="visible">True</property>
+   </object>
+   <object name="rss" meta_type="CMF Action" i18n:domain="plone" insert-after="sitemap">
+    <property name="title" i18n:translate="">RSS Feed</property>
+    <property name="description" i18n:translate=""></property>
+    <property
+       name="url_expr">string:${globals_view/navigationRootUrl}/rss</property>
+    <property name="link_target"></property>
+    <property name="icon_expr"></property>
+    <property name="available_expr"></property>
+    <property name="permissions">
+     <element value="View"/>
+    </property>
+    <property name="visible">True</property>
+   </object>
+   
+   <object name="accessibility" meta_type="CMF Action" i18n:domain="plone">
+    <property name="visible">False</property>
+   </object>
+   <object name="contact" meta_type="CMF Action" i18n:domain="plone">
+    <property name="visible">False</property>
+   </object>
+ </object>
+ 
 </object>

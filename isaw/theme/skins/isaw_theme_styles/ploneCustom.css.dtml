@@ -15,8 +15,7 @@ body {
 }
 
 #portal-top,
-#portal-columns,
-#portal-siteactions {
+#portal-columns {
     width: 919px;
     margin-left: 1px;
 }
@@ -194,7 +193,7 @@ body {
 #portal-column-nav .contact {
     text-indent: -99999px;
     background: url(&dtml-portal_url;/contact.gif) no-repeat;
-    margin: 50px 0 15px 4px;
+    margin: 50px 0 50px 4px;
     height: 81px;
 }
     
@@ -204,6 +203,7 @@ body {
         border: none;
         background-color: #e6ccac;
         opacity: 0.9;
+        font-size: 11px;
     }
     
     #portal-globalnav ul.submenu a {
@@ -223,6 +223,30 @@ body {
     #portal-globalnav ul.submenu a:hover span {
         text-decoration: underline;
     }
+    
+/* site actions */
+#portal-siteactions {
+    position: absolute;
+    text-align: right;
+    font-size: &dtml-fontSmallSize;;
+    background: url(&dtml-portal_url;/site_bottom.png) no-repeat;
+    width: 923px;
+    padding: 15px 12px 20px 0;
+    margin: -5px 0 0 -4px;
+}
+
+#portal-siteactions li {
+    margin: 0 0 0 25px;
+}
+
+#portal-siteactions a {
+    color: #ffffff;
+}
+
+#portal-siteactions a:hover {
+    color: &dtml-neutralColor;;
+}
+
 
 /* editing */
 #text_ifr {

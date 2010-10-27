@@ -29,8 +29,8 @@ globalFontColor:string=#333333
 headingFontFamily:string=Arial, sans-serif
 headingColor:string=#a44a26
 
-contentViewBorderColor:string=#75AD0A
-contentViewBackgroundColor:string=#75AD0A
+contentViewBorderColor:string=#62b15e
+contentViewBackgroundColor:string=#62b15e
 contentViewFontColor:string=#ffffff
 
 inputFontColor:string=#000000
