@@ -70,6 +70,45 @@ body {
     margin-right: 15px;
 }
 
+/* social buttons */
+#social-buttons {
+    position: absolute;
+    left: 925px;
+}
+
+#social-buttons li {
+    display: list-item;
+    margin-bottom: 5px;
+}
+
+#social-buttons a {
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(&dtml-portal_url;/social.png) no-repeat left top;
+    text-indent: -9999px;
+}
+
+#social-buttons .tw a {
+    background-position: 0 -25px;
+}
+
+#social-buttons .rss a {
+    background-position: 0 -50px;
+}
+
+#social-buttons a:hover {
+    background-position: -22px 0;
+}
+
+#social-buttons .tw a:hover {
+    background-position: -22px -25px;
+}
+
+#social-buttons .rss a:hover {
+    background-position: -22px -50px;
+}
+
 /* search */
 #searchGadget {
     border: 1px solid #a7a4a0;

@@ -35,5 +35,14 @@
       layer=".interfaces.IThemeSpecific"
       />
 
+  <!-- social buttons -->
+  <browser:viewlet
+      name="isaw.social"
+      manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+      template="viewlets/social.pt"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+      />
+
   
 </configure>

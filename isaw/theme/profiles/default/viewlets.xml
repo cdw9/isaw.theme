@@ -1,5 +1,12 @@
 <?xml version="1.0"?>
 <object>
+ <order manager="plone.portalheader" skinname="NYU ISAW Theme">
+     <viewlet name="plone.skip_links"/>
+     <viewlet name="plone.personal_bar"/>
+     <viewlet name="isaw.social"/>
+     <viewlet name="plone.searchbox"/>
+     <viewlet name="plone.logo"/>
+ </order>
  <hidden manager="plone.portalheader" skinname="NYU ISAW Theme">
      <viewlet name="plone.global_sections"/>
  </hidden>
