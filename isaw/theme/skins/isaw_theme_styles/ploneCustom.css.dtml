@@ -17,11 +17,12 @@ body {
 #portal-top,
 #portal-columns,
 #portal-siteactions {
-    width: 920px;
+    width: 919px;
+    margin-left: 1px;
 }
 
-#content-left.hasRightCol {
-    width: 575px;
+#portal-column-content {
+    padding-left: 13px;
 }
 
 /* VIEWLETS */
@@ -29,7 +30,7 @@ body {
 /* personal bar */
 #portal-personaltools-wrapper {
     position: absolute;
-    margin: -20px 0 0 -11px;
+    margin: -20px 0 0 -12px;
     padding-right: 15px;
     width: 927px;
     text-align: right;
@@ -92,7 +93,7 @@ body {
 /* logo */
 #isaw-logo {
     position: absolute;
-    margin-left: -64px;
+    margin-left: -65px;
 }
 
 #portal-logo {
@@ -100,7 +101,51 @@ body {
 }
 
 #portal-logo img {
-    margin-left: 8px;
+    margin: 0 0 30px 8px;
+}
+
+/* global nav */
+#portal-column-nav {
+    width: 133px;
+    background-color: &dtml-neutralColor;;
+}
+
+#portal-globalnav {
+    background-color: #cdb08a;
+    font-family: "Trebuchet MS", sans-serif;
+    padding: 5px 0;
+}
+
+#portal-globalnav li {
+    display: list-item;
+}
+
+#portal-globalnav a {
+    background: transparent;
+    color: #ffffff;
+    padding: 2px 5px;
+    margin-bottom: 5px;
+    border: none;
+    text-transform: uppercase;
+    display: block;
+}
+
+#portal-globalnav a:hover,
+#portal-globalnav li.selected a {
+    color: &dtml-primaryColor;;
+    background-color: #e6ccac;
+}
+
+#portal-column-nav .contact {
+    text-indent: -99999px;
+    background: url(&dtml-portal_url;/contact.gif) no-repeat;
+    margin: 50px 0 15px 4px;
+    height: 81px;
+}
+
+/* editing */
+#text_ifr {
+    background-color: #ffffff;
 }
 
 

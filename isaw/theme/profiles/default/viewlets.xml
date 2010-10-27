@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
 <object>
+ <hidden manager="plone.portalheader" skinname="NYU ISAW Theme">
+     <viewlet name="plone.global_sections"/>
+ </hidden>
  <hidden manager="plone.belowcontentbody" skinname="NYU ISAW Theme">
   <viewlet name="plone.abovecontenttitle.documentactions"/>
  </hidden>

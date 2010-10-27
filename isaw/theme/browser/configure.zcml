@@ -18,10 +18,22 @@
       layer=".interfaces.IThemeSpecific" />
   
   <!-- Viewlets registration -->
-  <!-- Zope 3 browser resources -->
+  <browser:viewletManager
+      name="isaw.leftcol"
+      provides=".interfaces.ILeftCol"
+      permission="zope2.View"
+      class="plone.app.viewletmanager.manager.BaseOrderedViewletManager"
+      layer=".interfaces.IThemeSpecific"
+      />
+      
+  <!-- The global sections -->
+  <browser:viewlet
+      name="plone.global_sections"
+      manager=".interfaces.ILeftCol"
+      class="plone.app.layout.viewlets.common.GlobalSectionsViewlet"
+      permission="zope2.View"
+      layer=".interfaces.IThemeSpecific"
+      />
 
-  <!-- Resource directory for images -->
-
-  <!-- Resource directory for stylesheets -->
-
+  
 </configure>
