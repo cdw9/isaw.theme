@@ -14,14 +14,31 @@ body {
     padding: 0 0 0 64px;
 }
 
-#portal-top,
-#portal-columns {
+#portal-top {
     width: 919px;
     margin-left: 1px;
 }
 
+#portal-columns {
+    width: 911px;
+    margin: 0 8px 0 1px;
+}
+
+#portal-column-two {
+    background: url(&dtml-portal_url;/title_border.png) repeat-x 0 4px;
+}
+
+#content {
+    background: url(&dtml-portal_url;/title_border.png) repeat-x 0 -19px;
+    margin: 0 0 24px 0;
+}
+
 #portal-column-content {
-    padding-left: 13px;
+    padding-left: 35px;
+}
+
+#portal-column-two .visualPadding {
+    padding: 36px 0 0 15px;
 }
 
 /* VIEWLETS */
@@ -184,10 +201,16 @@ body {
 }
 
 #portal-globalnav li a:hover,
-#portal-globalnav li.selected a,
-#portal-globalnav li.hover a {
+#portal-globalnav li.hover a,
+#portal-globalnav li.selected.hover a,
+#portal-globalnav li.selected a:hover {
     color: &dtml-primaryColor;;
     background-color: #e6ccac;
+}
+
+#portal-globalnav li.selected a {
+    color: &dtml-primaryColor;;
+    background-color: transparent;
 }
 
 #portal-column-nav .contact {
@@ -206,7 +229,8 @@ body {
         font-size: 11px;
     }
     
-    #portal-globalnav ul.submenu a {
+    #portal-globalnav ul.submenu a,
+    #portal-globalnav li.selected.hover ul.submenu a {
         border: none;
         text-transform: none;
         color: #716558;
@@ -247,8 +271,47 @@ body {
     color: &dtml-neutralColor;;
 }
 
+/* PORTLETS */
+.portlet {
+    background-color: &dtml-neutralColor;;
+}
 
-/* editing */
+.portlet dt {
+    background-color: transparent;
+    font-weight: normal;
+    color: &dtml-primaryColor;;
+    padding: 8px 8px 0;
+}
+
+.portlet dt a,
+.portlet dt a:visited {
+    color: &dtml-primaryColor;;
+}
+
+.portlet .portletItem {
+    padding: 8px;
+    font-size: 13px;
+}
+
+.portlet .portletItem a,
+.portlet .portletItem a:visited {
+    color: #4d4d4d;
+}
+
+.portlet .portletItem a:hover {
+    text-decoration: underline;
+}
+
+/* CONTENT */
+#content .documentFirstHeading {
+    line-height: 22px;
+    display: inline-block;
+    *display: block;
+    margin: -6px 0 15px;
+    background-color: #F3F1EB;
+}
+
+/* EDITING */
 #text_ifr {
     background-color: #ffffff;
 }
