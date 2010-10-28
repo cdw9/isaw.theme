@@ -352,6 +352,12 @@ body {
     background-color: #F3F1EB;
 }
 
+#content .image-caption {
+    margin: 0;
+    font-size: 11px;
+    color: #6e5b53;
+}
+
 /* EDITING */
 #text_ifr {
     background-color: #ffffff;

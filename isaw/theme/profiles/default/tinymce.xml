@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<object>
+ <resourcetypes>
+  <allow_captioned_images value="True"/>
+ </resourcetypes>
+</object>
