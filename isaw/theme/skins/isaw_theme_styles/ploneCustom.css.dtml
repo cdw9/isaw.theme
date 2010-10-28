@@ -169,6 +169,19 @@ body {
     display: none;
 }
 
+#LSResult {
+    margin-top: 0;
+    *margin-top: 12px;
+}
+
+.livesearchContainer {
+    padding: 0 0 0 5px;
+}
+
+#livesearchLegend {
+    margin-top: -12px;
+}
+
 /* logo */
 #isaw-logo {
     position: absolute;
