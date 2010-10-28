@@ -17,6 +17,11 @@ body {
 #portal-top {
     width: 919px;
     margin-left: 1px;
+    *height: 119px; /* absolute header */
+}
+
+#portal-header {
+    *position: absolute; /* absolute header */
 }
 
 #portal-columns {
@@ -92,6 +97,7 @@ body {
 #social-buttons {
     position: absolute;
     left: 925px;
+    top: 1px;
 }
 
 #social-buttons li {
@@ -160,6 +166,7 @@ body {
 
 #portal-logo img {
     margin: 0 0 30px 8px;
+    *margin-top: 40px; /* absolute header */
 }
 
 /* breadcrumbs */
