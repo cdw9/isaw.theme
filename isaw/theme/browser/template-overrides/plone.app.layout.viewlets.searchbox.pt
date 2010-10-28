@@ -22,12 +22,10 @@
                                id search_input_id"
                class="searchField inputLabel"
 
-         /><button class="searchButton"
+         /><input class="searchButton"
                 type="submit"
-                value=""
-                i18n:attributes="value label_search;">
-                <img src="" tal:attributes="src string:${context/portal_url}/search_button.gif" alt="Search" />
-           </button>
+                value="    "
+                i18n:attributes="value label_search;" />
 
         <div class="searchSection">
             <input id="searchbox_currentfolder_only"

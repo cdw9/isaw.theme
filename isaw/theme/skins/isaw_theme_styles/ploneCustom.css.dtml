@@ -21,7 +21,8 @@ body {
 }
 
 #portal-header {
-    *position: absolute; /* absolute header */
+    *width: 919px; /* absolute header */
+    *position: absolute; /* absolute header for IE <= 7 */
 }
 
 #portal-columns {
@@ -134,19 +135,34 @@ body {
 }
 
 /* search */
-#searchGadget {
-    border: 1px solid #a7a4a0;
-    background-color: #eeece7;
-    font-size: &dtml-fontSmallSize;;
-    height: 13px;
-    *height: 18px;
-    padding-left: 3px;
+#portal-searchbox {
+    margin: 5px 0 24px;
+    *margin-top: 0;
+    *float: none; /* absolute header */
 }
 
-.searchButton {
+.LSBox {
+    padding: 0;
+    *float: right; /* absolute header */
+}
+
+#searchGadget {
+    border: 1px solid #a7a4a0;
+    background: #eeece7 url(&dtml-portal_url;/search_button.gif) no-repeat top right;
+    font-size: &dtml-fontSmallSize;;
+    height: 13px;
+    line-height: 13px;
+    padding-left: 3px; 
+}
+
+#portal-searchbox .searchButton {
     border: none;
-    background-color: #a7a4a0;
+    background-color: transparent;
     cursor: pointer;
+    width: 15px;
+    height: 13px;
+    margin: 0 0 0 -15px;
+    position: absolute;
 }
 
 #portal-searchbox .searchSection {
