@@ -182,7 +182,7 @@ body {
 
 #portal-logo img {
     margin: 0 0 30px 8px;
-    *margin-top: 40px; /* absolute header */
+    *margin-top: 17px; /* absolute header */
 }
 
 /* breadcrumbs */
