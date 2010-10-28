@@ -46,7 +46,9 @@ body {
 /* personal bar */
 #portal-personaltools-wrapper {
     position: absolute;
+    *position: relative;
     margin: -20px 0 0 -12px;
+    top: 0;
     padding-right: 15px;
     width: 927px;
     text-align: right;
@@ -149,6 +151,7 @@ body {
 #isaw-logo {
     position: absolute;
     margin-left: -65px;
+    top: 0px;
 }
 
 #portal-logo {
