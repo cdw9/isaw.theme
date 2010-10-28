@@ -21,7 +21,7 @@ body {
 
 #portal-columns {
     width: 911px;
-    margin: 0 8px 0 1px;
+    margin: 6px 8px 0 1px;
 }
 
 #portal-column-two {
