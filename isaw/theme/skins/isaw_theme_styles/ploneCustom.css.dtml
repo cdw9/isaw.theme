@@ -173,6 +173,8 @@ body {
 #portal-breadcrumbs {
     font-size: &dtml-fontSmallSize;;
     color: #666666;
+    line-height: 8px;
+    margin-bottom: 15px;
 }
 
 #portal-breadcrumbs a {
