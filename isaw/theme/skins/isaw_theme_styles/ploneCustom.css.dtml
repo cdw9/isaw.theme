@@ -267,7 +267,7 @@ body {
     font-size: &dtml-fontSmallSize;;
     background: url(&dtml-portal_url;/site_bottom.png) no-repeat;
     width: 923px;
-    padding: 15px 12px 20px 0;
+    padding: 12px 12px 20px 0;
     margin: -5px 0 0 -4px;
 }
 
