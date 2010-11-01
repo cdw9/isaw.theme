@@ -344,6 +344,10 @@ body {
 }
 
 /* CONTENT */
+#content-core {
+    padding-left: 3px;
+}
+
 #content .documentFirstHeading {
     line-height: 22px;
     display: inline-block;
@@ -356,6 +360,21 @@ body {
     margin: 0;
     font-size: 11px;
     color: #6e5b53;
+}
+
+#content .callout {
+    background-color: transparent;
+    border-right: 3px solid #050505;
+    border-left: 3px solid #050505;
+    color: #a3462b;
+    padding: 6px;
+    margin: 0 45px 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#content .callout a {
+    text-decoration: underline;
 }
 
 /* EDITING */
