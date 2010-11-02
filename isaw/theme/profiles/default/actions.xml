@@ -40,7 +40,7 @@
     <property name="title" i18n:translate="">Privacy Policy</property>
     <property name="description" i18n:translate=""></property>
     <property
-       name="url_expr">string:${globals_view/navigationRootUrl}/privacy</property>
+       name="url_expr">string:http://www.nyu.edu/footer/copyright-and-fair-use/important-notice.html</property>
     <property name="link_target"></property>
     <property name="icon_expr"></property>
     <property name="available_expr"></property>
