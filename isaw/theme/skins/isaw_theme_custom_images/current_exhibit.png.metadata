@@ -1,0 +1,3 @@
+[default]
+title = Current Exhibit
+cache = HTTPCache

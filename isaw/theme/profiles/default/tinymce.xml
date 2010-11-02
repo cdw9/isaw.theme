@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <object>
- <resourcetypes>
-  <allow_captioned_images value="True"/>
- </resourcetypes>
+ <layout>
+  <styles>
+   <element value="Learn More Link|span|learnMore"/>
+  </styles>
+ </layout>
 </object>

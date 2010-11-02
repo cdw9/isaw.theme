@@ -8,10 +8,9 @@ jq(document).ready(function(){
 
 
 jq(window).load(function(){
-    // set with on image <dl>s to be set at the width of the image
-    // if there is a caption, the width gets pushed out
+    // set width on image <dl>s to be set at the width of the image
+    // to keep caption from pushing out the width
     capnum = jq("dl.captioned").length;
-    console.log(capnum);
 
     for(i = 0; i < capnum; i++) {
          imgWidth = jq("dl.captioned img").eq(i).width();

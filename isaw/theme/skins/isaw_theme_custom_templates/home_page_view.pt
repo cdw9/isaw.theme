@@ -1,0 +1,87 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+<head>
+  <metal:block fill-slot="top_slot"
+               tal:define="disable_column_one python:request.set('disable_plone.leftcolumn',1);
+                           disable_column_two python:request.set('disable_plone.rightcolumn',1);" />
+</head>
+
+<body>
+    
+<metal:block fill-slot="content-title" />
+    
+<metal:content-core fill-slot="content-core">
+    <metal:content-core define-macro="content-core">
+        
+        <div id="home-left">
+            <metal:field use-macro="python:context.widget('text', mode='view')">
+                Body text
+            </metal:field>
+        </div>
+        
+        <div id="home-center">
+            
+            <!-- Featured Exhibit -->
+            <h3>The Art of Gandhara: Cultural Interactions in Ancient Pakistan</h3>
+            <div class="featuredDate">February 8 - May 15 2011</div>
+            <p class="featuredDescrip">
+                In partnership with the Asia Society Museum, this exhibition brings to New York City for the first time more than 200 objects that tell the story of the rich culture of Gandhara (1st - 5th centuries AD), located in present-day northern Pakistan and eastern Afghanistan. This crossroads region served as a gateway through which immigrants, traders, and conquerors traveled into India and central Asia, and its population interacted with a truly international amalgam of peoples and cultures from the Scythians to the Parthians, Romans, and Kushans.
+            </p>
+            <a href="#" class="featuredLink">visit this exhibit&gt;</a>
+        
+            <!-- Current Exhibit -->
+            <div id="home-right">
+                <div class="ceTitle">Couple in front of a Portal</div>
+                <div class="ceDescrip">Grey schist</div>
+                <p>Butkara I, second half of the first century AD<br />
+                Swat Museum, Saidu Sharif, <br />
+                inv. # B283</p>
+            </div>
+            
+            <!-- events -->
+            <div id="home-events">
+                <h2>Upcoming Events</h2>
+                <tal:events define="events python:context.portal_catalog(portal_type='Event', end={'query': DateTime(), 'range': 'min'}, sort_on='start', review_state='published')[:2]">
+                    <div class="homeEvent" tal:repeat="event events">
+                        <h4><a class="eventTitle" tal:attributes="href event/getURL">
+                            <span tal:replace="python:DateTime(event.start).strftime('%e %B %Y')" />: <span tal:replace="event/Title" />
+                        </a></h4>
+                        <!--<tal:speaker condition="event/getSpeaker">
+                            <span class="eventSpeaker" tal:content="event/getSpeaker" />:
+                        </tal:speaker>-->
+                        <span tal:replace="event/Description" />
+                        <p>
+                            <span class="eventTime" tal:content="python:DateTime(event.start).strftime('%l:%M %p')" />
+                            <span class="eventLocation" tal:content="event/location" />
+                        </p>
+                    </div>
+                </tal:events>
+            </div>
+        
+            <!-- news -->
+            <div id="home-news">
+                <h2>Latest News</h2>
+                <h4><a href="#">New Faculty: Lillian Tseng</a></h4>
+                <p>The Institute for the Study of the Ancient World at New York University is pleased to announce the appointment of Lillian Tseng as Associate Professor of East Asian Art and Archaeology.</p>
+
+                <h4><a href="#">New Faculty: SÃren Stark</a></h4>
+                <p>The Institute for the Study of the Ancient World at New York University is pleased to announce the appointment of SÃren Stark as Assistant Professor of Central Asian Art and Archaeology.</p>
+
+                <h4><a href="#">Grant Award from the National Endowment for the Humanities</a></h4>
+                <p>The Institute for the Study of the Ancient World is pleased to announce an award the National Endowment for the Humanities.</p>
+            </div>
+        </div>
+        
+        <div class="visualClear"><!-- --></div>
+        
+    </metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
+

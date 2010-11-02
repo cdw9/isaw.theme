@@ -360,6 +360,7 @@ body {
     margin: 0;
     font-size: 11px;
     color: #6e5b53;
+    text-align: right;
 }
 
 #content .callout {
@@ -377,9 +378,128 @@ body {
     text-decoration: underline;
 }
 
-/* EDITING */
+/* EDITING, TINYMCE STYLES */
 #text_ifr {
     background-color: #ffffff;
+}
+
+.learnMore {
+    color: #808080;
+    font-size: 11px;
+    background: url(&dtml-portal_url;/gray_bullet.png) no-repeat 0 4px;
+    padding-left: 8px;
+}
+
+.learnMore a {
+    color: #808080;
+}
+
+.learnMore,
+.learnMore a:hover {
+    color: &dtml-linkHoverColor;;
+}
+
+/* HOMEPAGE */
+.template-home_page_view #portal-column-content {
+    padding-left: 12px;
+}
+
+.template-home_page_view #portal-breadcrumbs {
+    display: none;
+}
+
+.template-home_page_view #content {
+    background: transparent none;
+    line-height: 14px;
+}
+
+#home-left {
+    float: left;
+    width: 176px;
+}
+
+#home-center {
+    width: 570px;
+    float: right;
+}
+
+#home-center h4 a {
+    font-weight: normal;
+}
+
+#home-events,
+#home-news {
+    width: 350px;
+}
+
+.homeEvent {
+    width: 165px;
+    padding-right: 10px;
+    font-size: 11px;
+    float: left;
+}
+
+.homeEvent p {
+    font-size: &dtml-fontSmallSize;;
+    margin-top: 10px;
+}
+
+.homeEvent .eventSpeaker {
+    font-weight: bold;
+}
+
+.homeEvent .eventTime {
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+.homeEvent .eventLocation {
+    font-style: italic;
+}
+
+#home-news {
+    padding-top: 20px;
+    font-size: 11px;
+    clear: left;
+}
+
+#home-right {
+    float: right;
+    width: 180px;
+    margin-top: 25px;
+    padding-left: 20px;
+    min-height: 107px;
+    background: url(&dtml-portal_url;/current_exhibit.png) no-repeat top left;
+    text-align: right;
+    font-size: 11px;
+    color: #6d6e70;
+}
+
+.featuredDate {
+    font-size: 11px;
+    font-style: italic;
+}
+
+#content .featuredDescrip {
+    margin: 0;
+}
+
+.featuredLink {
+    color: #808080;
+    font-size: &dtml-fontSmallSize;;
+    font-weight: bold;
+    text-align: right;
+    display: block;
+    padding-right: 15px;
+}
+
+.ceTitle {
+    color: #42250d;
+    font-size: 12px;
+}
+
+.ceDescrip {
+    color: #404041;
 }
 
 
