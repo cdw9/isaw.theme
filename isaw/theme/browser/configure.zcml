@@ -17,15 +17,6 @@
       directory="template-overrides"
       layer=".interfaces.IThemeSpecific" />
   
-  <browser:page
-      for="*"
-      name="home_page"
-      class=".homepageview.HomePageView"
-      permission="zope.Public"
-      allowed_interface=".interfaces.IHomeView"
-      layer=".interfaces.IThemeSpecific"
-      />
-
   <!-- Viewlets registration -->
   <browser:viewletManager
       name="isaw.leftcol"
