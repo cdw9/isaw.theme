@@ -15,5 +15,5 @@ class ILeftCol(IViewletManager):
 class IUtilsView(Interface):
     """ Marker interface for misc browser view """
 
-    def getUpcomingEvents(root):
+    def getUpcomingEvents(limit):
         """Grabbing upcoming events for the home page"""
