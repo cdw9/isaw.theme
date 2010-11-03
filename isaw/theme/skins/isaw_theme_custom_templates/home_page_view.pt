@@ -46,7 +46,8 @@
             <!-- events -->
             <div id="home-events">
                 <h2>Upcoming Events</h2>
-                <tal:events define="events python:context.portal_catalog(portal_type='Event', end={'query': DateTime(), 'range': 'min'}, sort_on='start', review_state='published')[:2]">
+                <tal:events define="utils_view context/@@utils_view;
+                                    events utils_view/getUpcomingEvents">
                     <div class="homeEvent" tal:repeat="event events">
                         <h4><a class="eventTitle" tal:attributes="href event/getURL">
                             <span tal:replace="python:DateTime(event.start).strftime('%e %B %Y')" />: <span tal:replace="event/Title" />

@@ -19,4 +19,14 @@
     <depends name="skins"/>
   </genericsetup:importStep>
 
+  <genericsetup:upgradeStep
+      sortkey="10"
+      source="0"
+      destination="1"
+      title="Create isaw home page"
+      description=""
+      profile="isaw.theme:default"
+      handler="isaw.theme.setuphandlers.createHomePage"
+      />
+
 </configure>

@@ -44,5 +44,13 @@
       layer=".interfaces.IThemeSpecific"
       />
 
-  
+  <!-- Utils View -->
+  <browser:page
+     name="utils_view"
+     for="*"
+     class=".utilsview.UtilsView"
+     permission="zope.Public"
+     allowed_interface=".interfaces.IUtilsView"
+     /> 
+
 </configure>
