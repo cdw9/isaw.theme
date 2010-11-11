@@ -5,9 +5,9 @@ plone_skin:string=Plone Basic
 logoName:string=logo.png
 
 fontFamily:string=Arial, sans-serif
-fontBaseSize:string=12px
+fontBaseSize:string=14px
 fontColor:string=#231f20
-fontSmallSize:string=10px
+fontSmallSize:string=12px
 
 backgroundColor:string=#ffffff
 primaryColor:string=#a44a26
