@@ -432,6 +432,7 @@ body {
     background: transparent none;
     line-height: 14px;
     margin-top: 0 !important;
+    margin-right: 3px;
 }
 
 #home-left {
@@ -440,7 +441,8 @@ body {
 }
 
 #home-center {
-    width: 570px;
+    width: 565px;
+    margin-right: 5px;
     float: right;
 }
 
