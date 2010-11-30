@@ -32,4 +32,13 @@ class UtilsView(BrowserView):
                                    sort_on='start',
                                    review_state='published')[:limit]
 
-
+    def getMonthName(self, month, full=None):
+        """ Translates a month int into a short name """
+        month_list = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL',
+                      'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
+        full_month_list = ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL',
+                           'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER',
+                           'OCTOBER', 'NOVEMBER', 'DECEMBER']
+        if type(month) is int and 0 < month < 13:
+            return full and full_month_list[month-1] or month_list[month-1]
+        return ''

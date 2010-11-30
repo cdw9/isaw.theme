@@ -119,9 +119,17 @@ a.managePortletsFallback {
 }
 
 /* calendar portlet */
-.portletCalendar {
+.portlet.portletCalendar {
     margin: 1px 0 1em 0;
+    background-color: #f3f1e3;
 }
+
+.portletCalendar .portletHeader {
+    color: #984f2d;
+    font-weight: bold;
+
+}
+
 .portletCalendar dt {
     background-color: &dtml-neutralColor;;
     font-weight: bold;
@@ -153,29 +161,65 @@ a.managePortletsFallback {
 .ploneCalendar a {
     text-decoration: none;
 }
+.ploneCalendar.headsection {
+    margin-bottom: 3px;
+}
 .ploneCalendar td {
-    background-color: transparent;
+    color: #9d9d9d;
+    background-color: #ffffff;
     width: 14%;
     text-align: center;
     padding: 2px;
 }
-.ploneCalendar .weekdays th {
-    background-color: #eee;
-    text-align: center;
-    padding: 2px;
-    font-weight: normal;
+.ploneCalendar .weekdays {
+    border-bottom: solid 1px #cbb291;
+    margin-bottom: 3px;
 }
-.ploneCalendar .event {
-    background-color: &dtml-neutralColor;;
+.ploneCalendar .weekdays th {
+    color: #c8af8b;
+    text-align: center;
     font-weight: bold;
 }
+.ploneCalendar .event {
+    background-color: #ffffff;
+}
 .ploneCalendar .todayevent {
-    background-color: &dtml-neutralColor;;
-    border: 2px solid &dtml-primaryColor;;
+    background-color: #974c2c;
+    font-weight: bold;
+}
+.ploneCalendar .event a {
+    color: #974c2c !important;
+    font-weight: normal;
+}
+.ploneCalendar .todayevent a {
+    color: #ffffff !important;
     font-weight: bold;
 }
 .ploneCalendar .todaynoevent {
-    border: 2px solid &dtml-primaryColor;;
+    color: #ffffff;
+    background-color: #974c2c;
+}
+.ploneCalendar .todaynoevent strong {
+    font-weight: normal;
+}
+.portletCalendar .portletItem .portletBottomLeft {
+    display: block;
+    margin-top: 3px;
+    padding: 8px 3px;
+    border-top: solid 1px #cbb291;
+}
+.portletCalendar .portletItem .portletBottomLeft a {
+    font-weight: bold;
+    color: #cbb291;
+}
+#calendar-previous {
+    float: left;
+}
+#calendar-next {
+    float: right;
+}
+.ploneCalendar tbody {
+    margin: 4px 0;
 }
 
 /* </dtml-with> */
