@@ -3,7 +3,12 @@ jq(document).ready(function(){
    jq("li .submenu").hover(
      function () { jq(this).parent().addClass("hover"); }, 
      function () { jq(this).parent().removeClass("hover"); }
-   );   
+   );
+   
+   // move page elements down for longer titles
+   var titleHeight = jq("#above-content").height();
+   jq("#content, #edit-bar").css("margin-top",titleHeight + 20);
+   jq("#portal-column-two .visualPadding").css("padding-top",titleHeight + 1);
 });
 
 
