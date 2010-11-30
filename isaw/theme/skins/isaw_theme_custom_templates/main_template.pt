@@ -115,7 +115,10 @@
             <tal:comment replace="nothing"> Start of main content block </tal:comment>
             <td id="portal-column-content">
 
-              <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" />
+              <div id="above-content">
+                  <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" />
+                  <h1 class="documentHeading"><span tal:content="context/Title" /></h1>
+              </div>
 
               <metal:block define-slot="content">
                 <div metal:define-macro="content"
