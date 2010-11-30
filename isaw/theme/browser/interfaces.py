@@ -17,3 +17,6 @@ class IUtilsView(Interface):
 
     def getUpcomingEvents(limit):
         """Grabbing upcoming events for the home page"""
+
+    def getMonthName(self, month):
+        """ Translates a month int into a short name """
