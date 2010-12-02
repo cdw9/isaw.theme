@@ -33,5 +33,6 @@
                   tal:content="title">crumb</span>
          </tal:item>
     </span>
+    <span id="breadcrumbs-current" tal:condition="python:request.URL.endswith('search')" tal:content="string: > Search"/>
 
 </div>
