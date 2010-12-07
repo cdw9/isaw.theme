@@ -117,7 +117,7 @@
 
               <div id="above-content">
                   <div id="viewlet-above-content" tal:content="structure provider:plone.abovecontent" />
-                  <h1 class="documentHeading"><span tal:content="context/Title" /></h1>
+                  <h1 class="documentHeading"><span tal:content="python: request.URL.endswith('search') and 'Search' or context.Title()" /></h1>
               </div>
 
               <metal:block define-slot="content">

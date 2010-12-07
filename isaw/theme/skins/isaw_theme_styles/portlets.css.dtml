@@ -212,6 +212,11 @@ a.managePortletsFallback {
     font-weight: bold;
     color: #cbb291;
 }
+
+.portletCalendar .portletItem .portletBottomLeft a:visited {
+    font-weight: bold;
+    color: #cbb291;
+}
 #calendar-previous {
     float: left;
 }

@@ -1051,4 +1051,55 @@ input.searchPage {
     margin: 0.75em;
 }
 
+/* Search Results */
+
+form.searchPage {
+    text-align: left;
+}
+input.searchPage {
+    margin-left: -6px;
+    font-weight: bold;
+    font-size: 16px;
+    height: 18px;
+    padding: 2px 0 0 0;
+    background-color: #edece7;
+    border-style:solid;
+    border-width: 2px;
+    border-top-color: #c7c7c7;
+    border-bottom-color: #dddddd;
+    border-left-color: #e2e1df;
+}
+input.searchPage.searchButton {
+    margin-top: 0px;
+    padding: 0;
+    border-right-color: #d1d1d1;
+    border-left-width: 0;
+    width: 32px;
+    height: 24px;
+    background: url("http://localhost:51089/isaw/search_results_button.png") no-repeat scroll right top #EEECE7;
+}
+#search-result-display {
+    color: #A44A26;
+    font-weight: bold;
+    font-size: 16px;
+}
+p#search-result-section {
+    margin: 15px 0 0 0;
+}
+a.link-feed {
+    color: #666666;
+}
+.searchResults dt a,
+.searchResults dt a:hover,
+.searchResults dt a:visited {
+    font-size: 16px;
+}
+#content .searchResults dd {
+    margin-left: 1em;
+}
+#gray-line {
+    margin-left: 1em;
+    color: #666666;
+}
+
 /* </dtml-with> */
