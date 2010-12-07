@@ -1097,9 +1097,32 @@ a.link-feed {
 #content .searchResults dd {
     margin-left: 1em;
 }
-#gray-line {
+.gray-line {
     margin-left: 1em;
     color: #666666;
+}
+
+/* Site Map */
+
+.template-sitemap div {
+    line-height: 1.5em;
+}
+#portal-sitemap li {
+    border-bottom: none;
+    padding-left: 0;
+}
+#portal-sitemap a {
+    margin-top: 0.5em;
+}
+.template-sitemap .sitemap-summary,
+.template-sitemap .sitemap-gray {
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: 1em;
+}
+.template-sitemap .sitemap-gray {
+    color: #666666;
+    margin-left: 2em;
 }
 
 /* </dtml-with> */
