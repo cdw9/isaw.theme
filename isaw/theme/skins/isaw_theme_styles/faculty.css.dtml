@@ -60,6 +60,57 @@
     text-transform: lowercase;
 }
 
+/* faculty detail */
+.template-faculty_detail #portal-column-two {
+    overflow: hidden;
+}
+
+.template-faculty_detail #portal-column-two .visualPadding {
+    background-color: #E2DED5;
+    padding-bottom: 9999999px;
+    margin-bottom: -9999999px;
+}
+
+#content .facultyTitles {
+    font-size: 15px;
+    margin: 0;
+}
+
+.facultyContact {
+    margin: 15px 0;
+    border-color: &dtml-primaryColor;;
+    border-width: 1px 0;
+    border-style: solid;
+    padding: 3px 0;
+    text-align: center;
+}
+
+.facultyContact a {
+    float: left;
+}
+
+.facultyContact .address {
+    float: right;
+}
+
+.viewButton {
+    background-color: #e2ded5;
+    text-align: center;
+    width: 48%;
+    margin: 15px 5px 15px 0;
+    float: left;
+    padding: 4px 0;
+}
+
+.viewButton a {
+    background: url("&dtml-portal_url;/red_arrow.gif") no-repeat right center;
+    padding-right: 15px;
+}
+
+.title {
+    font-style: italic;
+}
+
 
 
 /* </dtml-with> */

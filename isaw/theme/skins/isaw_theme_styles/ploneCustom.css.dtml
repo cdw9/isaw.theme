@@ -35,7 +35,8 @@ body {
 }
 
 #portal-column-two .visualPadding {
-    padding: 36px 0 0 15px;
+    margin: 36px 0 0 15px;
+    padding: 0;
 }
 
 /* VIEWLETS */
@@ -346,6 +347,17 @@ body {
     text-decoration: underline;
 }
 
+/* navigation */
+.portlet .navTreeLevel0 > .navTreeItem {
+    border: none;
+    margin-bottom: 10px;
+}
+
+.portlet .navTree a {
+    padding: 0;
+    line-height: 1.2em;
+}
+
 /* PAGE HEADING AND RELATED ELEMENTS */
 #above-content {
     width: 743px;
@@ -384,10 +396,7 @@ body {
 #content {
     margin-right: 15px;
     margin-bottom: 24px;
-}
-
-#content-core {
-    padding-left: 3px;
+    margin-left: 0;
 }
 
 #content .image-caption {

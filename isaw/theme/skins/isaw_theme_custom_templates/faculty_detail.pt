@@ -1,0 +1,52 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+<body>
+    
+<metal:block fill-slot="content-title" />
+    
+<metal:content-core fill-slot="content-core">
+    <metal:content-core define-macro="content-core">
+        
+        <p class="facultyTitles">Professor of the History of the Exact Sciences in Antiquity</p>
+        <p class="facultyTitles">Professor of Mathematics (Associated Faculty, Courant Institute)</p>
+        
+        <div class="facultyContact">
+            <span class="address">15 E. 84th Street New York, NY 10028</span>
+            <a href="mailto:alexander.jones@nyu.edu">alexander.jones@nyu.edu</a>
+            <span class="phone">212-922-7840</span>
+            <div class="visualClear"><!-- --></div>
+        </div>
+        
+        Before joining the NYU faculty in 2007, Bagnall was Jay Professor of Greek and Latin and Professor of History at Columbia University, where he had taught for 33 years. During that time he served as Dean of the Graduate School of Arts and Sciences and Chair of the Department of Classics. Educated at Yale University and the University of Toronto, he specializes in the social and economic history of Hellenistic, Roman and Late Antique Egypt. He has held many leadership positions in the fields of classics and papyrology; he is co-founder of a six-university consortium creating the!Advanced Papyrological Information System. Among his best-known works are!Egypt in Late Antiquity (1993),!The Demography of Roman Egypt (1994; with Bruce Frier), and!Reading Papyri, Writing Ancient History (1995). He has also edited many volumes of papyri and other ancient texts. He directs , NYU-Columbia's joint excavation project at Amheida in the Dakhla Oasis in Egypt. He is a member of the American Philosophical Society and the Académie Royale de Belgique, as well as a Fellow of the American Academy of Arts and Sciences and the British Academy.
+
+        <div class="viewButton">
+            <a href="#">View Full CV</a>
+        </div>
+        
+        <div class="viewButton">
+            <a href="#">View All Publications</a>
+        </div>
+        
+        <h2>Recent Publications</h2>
+        
+        <tal:pubs repeat="faculty python:'1','2','3','4','5','6'">
+        
+            <p>
+                <span class="title">Death and Taxes: Ostraka in the Royal Ontario Museum I</span>
+                (Am.Stud.Pap. 10, Toronto 1971) (with A.E. Samuel, A.K. Bowman and W.K. Hastings)
+                <a href="#">View Publication</a>
+            </p>
+        
+        </tal:pubs>
+        
+    </metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
+

@@ -7,8 +7,8 @@ jq(document).ready(function(){
    
    // move page elements down for longer titles
    var titleHeight = jq("#above-content").height();
-   jq("#content, #edit-bar").css("margin-top",titleHeight + 20);
-   jq("#portal-column-two .visualPadding").css("padding-top",titleHeight + 1);
+   jq("#content, #edit-bar").css("margin-top",titleHeight + 9);
+   jq("#portal-column-two .visualPadding").css("margin-top",titleHeight + 1);
    
 });
 
