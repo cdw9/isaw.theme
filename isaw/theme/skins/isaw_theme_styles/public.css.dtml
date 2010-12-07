@@ -400,11 +400,6 @@ body#content {
     border-collapse: collapse;
     border-spacing: 0px;
 }
-#content .documentDescription,
-#content #description {
-    color: #666;
-    font: bold 1.25em &dtml-fontFamily;;
-}
 
 #content .tileImage,
 #content .newsImageContainer {
