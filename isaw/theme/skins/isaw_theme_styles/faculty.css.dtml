@@ -1,0 +1,65 @@
+/*
+  <dtml-with base_properties> (do not remove this)
+  <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either)
+*/
+
+/* faculty main */
+.template-faculty_main #content-core {
+    margin-top: 10px;
+}
+
+.facultyListing {
+    margin-bottom: 14px;
+}
+
+.facultyListing img {
+    float: left;
+    width: 96px;
+    height: auto;
+    border: 5px solid #ffffff;
+}
+
+.facultyListing .facultyInfo {
+    margin-left: 112px;
+    position: relative;
+}
+
+.facultyInfo h2 {
+    line-height: 1em;
+}
+
+#content .facultyListing p {
+    margin: 0;
+}
+
+.facultyTitle {
+    color: &dtml-primaryColor;;
+    font-size: 17px;
+}
+
+.facultyPosition {
+    color: #757575;
+    font-weight: bold;
+}
+
+.alignBottom {
+    position: relative;
+    bottom: 0;
+}
+
+.facultyEmail {
+    color: &dtml-primaryColor;;
+    line-height: 1em;
+}
+
+.moreInfo {
+    color: #808080;
+    font-size: 12px;
+    background: url("&dtml-portal_url;/gray_bullet.png") no-repeat 0 5px;
+    padding-left: 7px;
+    text-transform: lowercase;
+}
+
+
+
+/* </dtml-with> */
