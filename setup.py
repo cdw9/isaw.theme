@@ -27,6 +27,7 @@ setup(name='isaw.theme',
           'setuptools',
           # -*- Extra requirements: -*-
           'sixfeetup.utils',
+          'collective.addthis',
       ],
       entry_points="""
       [z3c.autoinclude.plugin]
