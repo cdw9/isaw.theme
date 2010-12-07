@@ -20,3 +20,6 @@ class IUtilsView(Interface):
 
     def getMonthName(self, month):
         """ Translates a month int into a short name """
+
+    def formatSiteMap(self, code):
+        """ Customizes the sitemap pre-formated code to fit the comps """
