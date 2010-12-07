@@ -1073,7 +1073,6 @@ input.searchPage {
     border-top-color: #c7c7c7;
     border-bottom-color: #dddddd;
     border-left-color: #e2e1df;
-
 }
 input.searchPage.searchButton {
     margin-top: 0px;
@@ -1084,7 +1083,6 @@ input.searchPage.searchButton {
     height: 24px;
     background: url("http://localhost:51089/isaw/search_results_button.png") no-repeat scroll right top #EEECE7;
 }
-
 #search-result-display {
     color: #A44A26;
     font-weight: bold;
@@ -1093,15 +1091,20 @@ input.searchPage.searchButton {
 p#search-result-section {
     margin: 15px 0 0 0;
 }
-
 a.link-feed {
     color: #666666;
 }
-
 .searchResults dt a,
 .searchResults dt a:hover,
 .searchResults dt a:visited {
     font-size: 16px;
+}
+#content .searchResults dd {
+    margin-left: 1em;
+}
+#gray-line {
+    margin-left: 1em;
+    color: #666666;
 }
 
 /* </dtml-with> */

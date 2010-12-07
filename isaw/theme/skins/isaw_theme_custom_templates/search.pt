@@ -162,6 +162,9 @@
                         Cropped description
                     </span>
 
+<!-- Note: if you change the gray-line id bellow, you will need to change the css file ../styles/public.css too -->
+                    <div id="gray-line">Gray text here, change me in the theme egg, skins, custom templates, search.pt</div>
+
                 <span class="documentByLine"
                       tal:condition="python:not isAnon or site_properties.allowAnonymousViewAbout">
                     <span class="documentAuthor"
