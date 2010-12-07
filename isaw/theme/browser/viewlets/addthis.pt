@@ -1,0 +1,5 @@
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style" id="socialtools" i18n:domain="collective.addthis">
+    <a href="#" class="addthis_button_compact" tal:attributes="href view/getAddThisURL" i18n:translate="">Share</a>
+</div>
+<!-- AddThis Button END -->
