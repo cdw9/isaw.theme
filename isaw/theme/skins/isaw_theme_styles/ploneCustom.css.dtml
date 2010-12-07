@@ -305,6 +305,16 @@ body {
     color: &dtml-neutralColor;;
 }
 
+/* share this */
+#socialtools {
+    font-size: 12px;
+    margin-top: -4px;
+}
+
+#at15s {
+    top: 192px !important;
+}
+
 /* PORTLETS */
 .portlet {
     background-color: &dtml-neutralColor;;

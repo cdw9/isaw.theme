@@ -35,6 +35,16 @@
       layer=".interfaces.IThemeSpecific"
       />
 
+  <!-- add this -->
+  <browser:viewlet
+      name="collective.addthis"
+      class="collective.addthis.addthis.AddThisViewlet"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContent"
+      template="viewlets/addthis.pt"
+      permission="zope.Public"
+      layer="collective.addthis.interfaces.IAddthisBrowserLayer"
+  />
+  
   <!-- social buttons -->
   <browser:viewlet
       name="isaw.social"

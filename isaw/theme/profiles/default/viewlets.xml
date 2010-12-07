@@ -12,6 +12,7 @@
  </hidden>
  <hidden manager="plone.belowcontentbody" skinname="NYU ISAW Theme">
   <viewlet name="plone.abovecontenttitle.documentactions"/>
+  <viewlet name="collective.addthis"/>
  </hidden>
  <hidden manager="plone.portalfooter" skinname="NYU ISAW Theme">
   <viewlet name="plone.footer"/>
