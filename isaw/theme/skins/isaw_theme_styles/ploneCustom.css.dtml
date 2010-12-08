@@ -34,6 +34,10 @@ body {
     padding-left: 35px;
 }
 
+#portal-column-two {
+    padding-left: 15px;
+}
+
 #portal-column-two .visualPadding {
     margin: 36px 0 0 15px;
     padding: 0;
@@ -394,7 +398,7 @@ body {
 
 /* CONTENT */
 #content {
-    margin-right: 15px;
+    margin-right: 0px;
     margin-bottom: 24px;
     margin-left: 0;
 }
@@ -419,6 +423,10 @@ body {
 
 #content .callout a {
     text-decoration: underline;
+}
+
+.subheading {
+    font-size: 15px;
 }
 
 /* EDITING, TINYMCE STYLES */

@@ -1,0 +1,58 @@
+/*
+  <dtml-with base_properties> (do not remove this)
+  <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either)
+*/
+
+/* event detail page */
+.eventCal {
+    float: right;
+    text-align: right;
+    width: 275px;
+}
+
+#content .eventCal li {
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.eventCal .cal {
+    background: url("&dtml-portal_url;/event_cal.png") no-repeat top left;
+    display: block;
+    width: 28px;
+    height: 28px;
+    text-indent: 99999px;
+}
+
+.eventCal .vcal {
+    background-position: top right;
+}
+
+.eventType {
+    font-size: 12px;
+    font-weight: bold;
+    color: #757575;
+    margin: 3px 0;
+}
+
+.eventSpeaker {
+    font-size: 17px;
+    color: &dtml-primaryColor;;
+}
+
+.eventBody {
+    margin-top: 17px;
+    clear: both;
+}
+
+.eventBody .captioned {
+    float: right;
+    text-align: right;
+    margin: 0 0 10px 10px;
+    border: 1px solid #cdb08a;
+    padding: 5px;
+    color: #42250d;
+}
+
+
+
+/* </dtml-with> */

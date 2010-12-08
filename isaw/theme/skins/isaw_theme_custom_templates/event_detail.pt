@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+<head>
+<metal:block fill-slot="top_slot"
+             tal:define="disable_column_two python:request.set('disable_plone.rightcolumn',1);" />
+</head>
+
+<body>
+    
+<metal:block fill-slot="content-title" />
+    
+<metal:content-core fill-slot="content-core">
+    <metal:content-core define-macro="content-core">
+        
+        <div class="eventCal">
+            Add to Your Calendar:
+            <ul>
+            <li><a href="#" class="cal ical">i.Cal</a></li>
+            <li><a href="#" class="cal vcal">v.Cal</a></li>
+            </ul>
+            RSVP: <a href="mailto:ISAWonline@nyu.edu">ISAWonline@nyu.edu</a>
+        </div>
+        
+        <div class="subheading">18 May 2010, 6:00 p.m.</div>
+        <div class="eventType">Visiting Research Scholar Lecture</div>
+        <div class="eventSpeaker">Arlo Griffiths, French School of Asian Studies</div>
+        
+        <div class="eventBody">
+            <!-- the image area may change depending on implementation -->
+            <dl class="captioned">
+                <img src="http://www.nyu.edu/isaw/exhibitions/oldeurope/sites/default/files/images/thinker.for_.main_.page_.jpg" alt="image title" width="400" />
+                <div>"The Thinker" from Cernavoda and female figurine. Fired clay, Hamangia, Cernavod.
+                Dated 5,000 - 4,600 bc, MNIR</div>
+            </dl>
+            <p>The aim of this lecture is to inform the interested New York public on recent developments in the study of the written records of ancient 'Indianized' polities in Southeast Asia. We will take as example the epigraphic corpus of the ancient Campa kingdom(s), which lay in what is now central and southern Vietnam. The study of Campa epigraphy involves texts in Sanskrit and in the poorly known vernacular Old Cam language, which belongs to the Austronesian language family. This field of research once flourished in French colonial times, then all but died out after WW II, and has only recently been resuscitated from a coma that lasted for decades. Newly discovered inscriptions have started to be published again, and a census of Campa inscriptions was undertaken last September-October in museums and archaeological sites of Vietnam. The aim of the census was to up-date the general inventory of Campa inscriptions, whose last published installment dates to 1942, and to record essential data of previously known and newly discovered epigraphical documents. The presentation will discuss general aspects of Southeast Asian epigraphy, as well as specific aspects of the Campa corpus and the history of its study. Some new inscriptions, which throw interesting new light on the history of Campa and its place within the larger scale development of Southeast Asian history, will be selected for close inspection.</p>
+
+            <p>Arlo Griffiths holds a PhD in Sanskrit from Leiden University. After holding a position as lecturer in Indian Religions at the University of Groningen (the Netherlands), and holding the chair of Sanskrit at Leiden University, he joined the French School of Asian Studies (L’École française d’Extrême-Orient) in 2008 as Professor of Southeast Asian history. His main fields of interest are Hindu religious/ritual literature in Sanskrit, on the one hand, and inscriptions of Southeast Asia in Sanskrit and vernacular languages, on the other. His approach to the (ancient) history of Southeast Asia is primarily epigraphic, and he is currently involved in projects concerning the inscriptions of ancient Cambodia, ancient Indonesia, and Campa.</p>
+
+        </div>
+        
+    </metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
+

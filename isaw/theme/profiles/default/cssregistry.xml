@@ -4,4 +4,10 @@
     cacheable="True" compression="safe" conditionalcomment="" cookable="True"
     enabled="True" expression="" id="faculty.css" media="" rel="stylesheet"
     rendering="import"/>
+    
+    <stylesheet title="" applyPrefix="False" authenticated="False"
+    cacheable="True" compression="safe" conditionalcomment="" cookable="True"
+    enabled="True" expression="" id="events
+             .css" media="" rel="stylesheet"
+    rendering="import"/>
 </object>
