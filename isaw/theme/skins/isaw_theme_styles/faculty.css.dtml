@@ -111,6 +111,43 @@
     font-style: italic;
 }
 
+/* Publications */
 
+#publicationAuthor {
+    border-top: solid 1px #A44A26;
+    border-bottom: solid 1px #A44A26;
+    padding: 5px 0;
+    margin: 5px 0 20px 0;
+    text-align: center;
+}
+#publicationAuthorEmail {
+    float: left;
+}
+#publicationAuthorAddress {
+    float: right;
+}
+.publicationLeftColumn {
+    float: left;
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.bookDisplay,
+.articleDisplay {
+    float: right;
+    width: 80%;
+    margin: 5px 0;
+}
+.publicationTitle {
+    font-style: italic;
+}
+.publicationDetails {
+    color: #666666;
+    font-size: 13px;
+}
+#bookSection,
+#articleSection {
+    margin: 15px 0;
+}
 
 /* </dtml-with> */

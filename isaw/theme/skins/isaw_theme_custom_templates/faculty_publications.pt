@@ -1,0 +1,55 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+<body>
+    
+<metal:block fill-slot="content-title" />
+    
+<metal:content-core fill-slot="content-core">
+    <metal:content-core define-macro="content-core">
+        <div id="publicationHeader">Publications
+            <div id="publicationAuthor">
+                <a id="publicationAuthorEmail" href="#">bla@bla.com</a>
+                <span id="publicationAuthorPhone">123-456-7890</span>
+                <span id="publicationAuthorAddress">number street city 00000</span>
+
+            </div>
+        </div>
+        <div id="bookSection"><div class="publicationLeftColumn">Books</div>
+            <tal:book repeat="book python:'1','2','3'">
+            
+                <div class="bookDisplay">
+                        <span class="publicationNote">(note goes here)</span>
+                        <span class="publicationTitle">I am the book's title</span>
+                        <span class="publicationDetails">Place (year). Misc-Info + some content so that it gets longer than a line</span>
+     
+                        <div class="visualClear"><!-- --></div>
+                </div>
+                
+            </tal:book>
+            <div class="visualClear"><!-- --></div>
+        </div>
+        <div id="articleSection"><div class="publicationLeftColumn">Articles</div>
+            <tal:article repeat="article python:'1','2','3'">
+            
+                <div class="articleDisplay">
+                        <span class="publicationNote">(note goes here)</span>
+                        <span class="publicationTitle">I am the article's title</span>
+                        <span class="publicationDetails">Place (year). Misc-Info</span>
+     
+                        <div class="visualClear"><!-- --></div>
+                </div>
+                
+            </tal:article>
+            <div class="visualClear"><!-- --></div>
+        </div>
+    </metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
+
