@@ -34,7 +34,8 @@
     margin: 3px 0;
 }
 
-.eventSpeaker {
+.eventSpeaker,
+.eventSpeakerLanding {
     font-size: 17px;
     color: &dtml-primaryColor;;
 }
@@ -52,7 +53,29 @@
     padding: 5px;
     color: #42250d;
 }
+#content .eventDate,
+#content .grayKeywords,
+#content .eventTitle,
+#content .eventAim {
+    margin-bottom: 0.1em;
+}
 
+#content .eventSpeakerLanding {
+    margin-bottom: 0.3em;
+}
 
+#content .eventDate {
+    font-size: 16px;
+}
+
+#content .eventDetails,
+#content .grayKeywords {
+    color: #666666;
+    font-size: 12px;
+}
+
+#content .grayKeywords {
+    font-weight: bold;
+}
 
 /* </dtml-with> */
