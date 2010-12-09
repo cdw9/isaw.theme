@@ -1,0 +1,17 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal">
+<body>
+
+<metal:ad define-macro="event">    
+    <div class="eventListing">
+        <p class="eventDate">18 May 2010, 6:00 p.m</p>
+        <p class="grayKeywords">Visiting Research Scholar Lecture</p>
+        <h2><a class="eventTitle" href="#">Rediscovering the inscriptions of Campa (Vietnam)</a></h2>
+        <p class="eventSpeakerLanding">Numitorem, Amulium</p>
+        <p class="eventAim">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in turpis at nisl viverra congue vitae et dui. Praesent vel risus dui. Duis enim metus, bibendum et rutrum at, lobortis nec velit. Sed metus nisi, tristique sed tempor semper, eleifend eget erat. Quisque sem sem, dictum id malesuada elementum, pharetra eu sapien. Suspendisse eget ante magna, et condimentum massa. Phasellus id ligula et metus tristique tincidunt a a ligula. Quisque vel leo augue. Suspendisse potenti. Maecenas non nibh nulla. Cras eget mattis sem. Mauris nec nunc quam. Aliquam cursus turpis quis odio malesuada at consectetur arcu eleifend. Pellentesque aliquet molestie mauris, non consectetur tellus congue id. Praesent vulputate lectus in quam tincidunt pellentesque. Duis mi quam, pharetra id vehicula quis, sagittis sed mauris. Nulla facilisi. Mauris placerat quam lobortis orci sollicitudin tristique. Phasellus ut libero non enim mollis pulvinar id non libero. </p>
+        <a href="#" class="eventDetails">event details ></a>
+        <div class="visualClear"><!-- --></div>
+    </div>
+</metal:ad>
+</body>
+</html>
