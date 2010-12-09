@@ -79,4 +79,8 @@
     font-weight: bold;
 }
 
+.eventListing {
+    margin-bottom:30px;
+}
+
 /* </dtml-with> */

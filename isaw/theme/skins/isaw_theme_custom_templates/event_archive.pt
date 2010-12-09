@@ -1,0 +1,31 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+<body>
+    
+<metal:block fill-slot="content-title" />
+    
+<metal:content-core fill-slot="content-core">
+    <metal:content-core define-macro="content-core" tal:define="
+                    events python:'1','2','3','1','2','3','1','2','3','1','2','3','1','2','3','1','2','3','1','2','3','1','2','3','1','2','3','1','2','3','1','2','3','1','2','3';
+                    b_size python:3;
+                    b_start python:0;
+                    b_start request/b_start | b_start;
+                    Batch python:modules['Products.CMFPlone'].Batch;
+                    batch python: Batch(events, b_size, int(b_start), orphan=1);">
+        <tal:event repeat="event batch">
+          <metal:block use-macro="here/event_macros/macros/event">
+            event here...
+          </metal:block>
+        </tal:event>
+        <div metal:use-macro="here/batch_macros/macros/navigation" />
+    </metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
+

@@ -1125,4 +1125,30 @@ a.link-feed {
     margin-left: 2em;
 }
 
+/* Batch Listing */
+
+.listingBar {
+    font-weight: bold;
+    color: #A44A26;
+    text-align: center;
+    font-size: 12px;
+}
+
+.listingBar a {
+    display: inline;
+    border: none;
+    padding: 0;
+    margin: 0 3px;
+}
+
+.listingBar .next a,
+.listingBar .previous a {
+    margin: 0 5px;
+    font-size: 13px;
+}
+
+.listingBar .next {
+    float: none;
+}
+
 /* </dtml-with> */
