@@ -3,6 +3,20 @@
   <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either)
 */
 
+.template-faculty_detail #portal-column-two,
+.template-faculty_cv #portal-column-two,
+.template-faculty_publications #portal-column-two {
+    overflow: hidden;
+}
+
+.template-faculty_detail #portal-column-two .visualPadding,
+.template-faculty_cv #portal-column-two .visualPadding,
+.template-faculty_publications #portal-column-two .visualPadding {
+    background-color: #E2DED5;
+    padding-bottom: 9999999px;
+    margin-bottom: -9999999px;
+}
+
 /* faculty main */
 .template-faculty_main #content-core {
     margin-top: 10px;
@@ -61,16 +75,6 @@
 }
 
 /* faculty detail */
-.template-faculty_detail #portal-column-two {
-    overflow: hidden;
-}
-
-.template-faculty_detail #portal-column-two .visualPadding {
-    background-color: #E2DED5;
-    padding-bottom: 9999999px;
-    margin-bottom: -9999999px;
-}
-
 #content .facultyTitles {
     font-size: 15px;
     margin: 0;
@@ -113,19 +117,6 @@
 
 /* Publications */
 
-#publicationAuthor {
-    border-top: solid 1px #A44A26;
-    border-bottom: solid 1px #A44A26;
-    padding: 5px 0;
-    margin: 5px 0 20px 0;
-    text-align: center;
-}
-#publicationAuthorEmail {
-    float: left;
-}
-#publicationAuthorAddress {
-    float: right;
-}
 .publicationLeftColumn {
     float: left;
     font-size: 17px;
@@ -148,6 +139,36 @@
 #bookSection,
 #articleSection {
     margin: 15px 0;
+}
+
+/* CV */
+#faculty-cv {
+    width: 100%;
+}
+
+#faculty-cv th {
+    font-size: 17px;
+    padding-bottom: 5px;
+}
+
+#faculty-cv td {
+    padding-bottom: 22px;
+    line-height: 17px;
+}
+
+#faculty-cv a {
+    font-size: 12px;
+}
+
+#faculty-cv .rightalign {
+    text-align: right;
+    width: 100px;
+    padding-right: 10px;
+}
+
+#faculty-cv .details {
+    color: #666666;
+    font-size: 12px;
 }
 
 /* </dtml-with> */

@@ -1,0 +1,135 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="plone">
+<body>
+    
+<metal:block fill-slot="content-title" />
+    
+<metal:content-core fill-slot="content-core">
+    <metal:content-core define-macro="content-core">
+        
+        <p class="facultyTitles">Curriculum Vitae</p>
+        
+        <div class="facultyContact">
+            <span class="address">15 E. 84th Street New York, NY 10028</span>
+            <a href="mailto:alexander.jones@nyu.edu">alexander.jones@nyu.edu</a>
+            <span class="phone">212-922-7840</span>
+            <div class="visualClear"><!-- --></div>
+        </div>
+        
+        <table id="faculty-cv">
+            
+        <tr>
+            <th colspan="2">Education and Degrees</th>
+        </tr>
+        <tr>
+            <td colspan="2">Ph.D., 1985, Brown University. <em>(History of Mathematics) Dissertation: Book 7 of Pappus’s Collection:</em> <span class="details">Edition, translation, and commentary.’ (Supervisor: G. J.Toomer).</span></td> 
+        </tr>
+        <tr>    
+            <td colspan="2">B.A., 1981: University of British Columbia. <em>(Honours Classics)</em></td>
+        </tr>
+        
+        <tr>
+            <th colspan="2">Positions Held</th>
+        </tr>
+        <tr>
+            <td class="rightalign">2008-present</td>
+            <td>Professor of the History of the Exact Sciences in Antiquity, <span class="details">Institute for the Study of the Ancient World, New York University.</span></td>
+        </tr>
+        <tr>
+            <td class="rightalign">1997-2008</td>
+            <td>Professor, Department of Classics and Institute for the History and Philosophy of Science and Technology <span class="details">(IHPST), University of Toronto. Full member of School of Graduate Studies. Appointment is 83% in Classics, 17% in IHPST.</span></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><a href="#">view more</a></td>
+        </tr>
+        
+        <tr>
+            <th colspan="2">Administrative Positions</th>
+        </tr>
+        <tr>
+            <td class="rightalign">2008-present</td>
+            <td>Director of Graduate Studies, <span class="details">ISAW</span></td>
+        </tr>
+        <tr>
+            <td class="rightalign">1999-2002</td>
+            <td>Graduate Coordinator and Associate Chair, Department of Classics, <span class="details">University of Toronto.</span></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><a href="#">view more</a></td>
+        </tr>
+        
+        <tr>
+            <th colspan="2">Visiting Appointments</th>
+        </tr>
+        <tr>
+            <td class="rightalign">dates</td>
+            <td>info</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><a href="#">view more</a></td>
+        </tr>
+        
+       <tr>
+            <th colspan="2">Honours</th>
+        </tr>
+        <tr>
+            <td class="rightalign">&nbsp;</td>
+            <td>info</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><a href="#">view more</a></td>
+        </tr>
+        
+        <tr>
+            <th colspan="2">Professional Affiliations and Activities</th>
+        </tr>
+        <tr>
+            <td class="rightalign">&nbsp;</td>
+            <td>info</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><a href="#">view more</a></td>
+        </tr>
+        
+        <tr>
+            <th colspan="2">Publications</th>
+        </tr>
+        <tr>
+            <td class="rightalign">&nbsp;</td>
+            <td>info</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><a href="#">view more</a></td>
+        </tr>
+        
+        <tr>
+            <th colspan="2">Refereed Journal Articles</th>
+        </tr>
+        <tr>
+            <td class="rightalign">&nbsp;</td>
+            <td>info</td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td><a href="#">view more</a></td>
+        </tr>
+        
+        </table>
+        
+    </metal:content-core>
+</metal:content-core>
+
+</body>
+</html>
+

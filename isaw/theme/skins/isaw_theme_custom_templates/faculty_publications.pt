@@ -12,11 +12,11 @@
 <metal:content-core fill-slot="content-core">
     <metal:content-core define-macro="content-core">
         <div id="publicationHeader">Publications
-            <div id="publicationAuthor">
-                <a id="publicationAuthorEmail" href="#">bla@bla.com</a>
-                <span id="publicationAuthorPhone">123-456-7890</span>
-                <span id="publicationAuthorAddress">number street city 00000</span>
-
+            <div class="facultyContact">
+                <span class="address">15 E. 84th Street New York, NY 10028</span>
+                <a href="mailto:alexander.jones@nyu.edu">alexander.jones@nyu.edu</a>
+                <span class="phone">212-922-7840</span>
+                <div class="visualClear"><!-- --></div>
             </div>
         </div>
         <div id="bookSection"><div class="publicationLeftColumn">Books</div>
