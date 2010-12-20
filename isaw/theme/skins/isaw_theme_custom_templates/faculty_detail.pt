@@ -24,12 +24,14 @@
         
         Before joining the NYU faculty in 2007, Bagnall was Jay Professor of Greek and Latin and Professor of History at Columbia University, where he had taught for 33 years. During that time he served as Dean of the Graduate School of Arts and Sciences and Chair of the Department of Classics. Educated at Yale University and the University of Toronto, he specializes in the social and economic history of Hellenistic, Roman and Late Antique Egypt. He has held many leadership positions in the fields of classics and papyrology; he is co-founder of a six-university consortium creating the!Advanced Papyrological Information System. Among his best-known works are!Egypt in Late Antiquity (1993),!The Demography of Roman Egypt (1994; with Bruce Frier), and!Reading Papyri, Writing Ancient History (1995). He has also edited many volumes of papyri and other ancient texts. He directs , NYU-Columbia's joint excavation project at Amheida in the Dakhla Oasis in Egypt. He is a member of the American Philosophical Society and the Académie Royale de Belgique, as well as a Fellow of the American Academy of Arts and Sciences and the British Academy.
 
-        <div class="viewButton">
-            <a href="#">View Full CV</a>
-        </div>
+        <div id="view-full">
+            <div class="viewButton">
+                <a href="#">View Full CV</a>
+            </div>
         
-        <div class="viewButton">
-            <a href="#">View All Publications</a>
+            <div class="viewButton">
+                <a href="#">View All Publications</a>
+            </div>
         </div>
         
         <h2>Recent Publications</h2>
