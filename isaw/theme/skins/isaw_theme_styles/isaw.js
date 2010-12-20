@@ -25,10 +25,10 @@ jq(window).load(function(){
     
     // align faculty e-mail/info link to bottom of image if text isn't too tall
     for(i = 0; i < jq(".facultyListing").length; i++) {
-       var imageHeight = jq(".facultyListing img").eq(i).height() + 10;
+       var imageHeight = jq(".facultyListing img").eq(i).height() + 12;
        var descripHeight = jq(".facultyInfo").eq(i).height();
-       if (descripHeight <= imageHeight) {
-           jq(".facultyListing .alignBottom").eq(i).css("position","absolute");
+       if (descripHeight > imageHeight) {
+           jq(".facultyListing .alignBottom").eq(i).css("position","relative");
        }
     }
 });

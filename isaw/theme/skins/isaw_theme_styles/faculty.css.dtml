@@ -24,6 +24,8 @@
 
 .facultyListing {
     margin-bottom: 14px;
+    clear: both;
+    width: 550px;
 }
 
 .facultyListing img {
@@ -57,7 +59,7 @@
 }
 
 .alignBottom {
-    position: relative;
+    position: absolute;
     bottom: 0;
 }
 
