@@ -121,13 +121,13 @@ a.managePortletsFallback {
 /* calendar portlet */
 .portlet.portletCalendar {
     margin: 1px 0 1em 0;
-    background-color: #f3f1e3;
+    background-color: transparent !important;
 }
 
 .portletCalendar .portletHeader {
     color: #984f2d;
     font-weight: bold;
-
+    padding-top: 5px;
 }
 
 .portletCalendar dt {
@@ -139,7 +139,7 @@ a.managePortletsFallback {
 }
 .portlet.portletCalendar dd {
     margin: 0;
-    padding: 0;
+    padding: 1px 0;
 }
 .portletCalendar dt a#calendar-previous {
     padding: 0 1em;
@@ -164,21 +164,33 @@ a.managePortletsFallback {
 .ploneCalendar.headsection {
     margin-bottom: 3px;
 }
+.ploneCalendar.bodysection {
+    width: 97%;
+    margin-left: 3px;
+}
 .ploneCalendar td {
     color: #9d9d9d;
     background-color: #ffffff;
     width: 14%;
     text-align: center;
     padding: 2px;
+    font-size: 15px;
 }
 .ploneCalendar .weekdays {
-    border-bottom: solid 1px #cbb291;
     margin-bottom: 3px;
 }
 .ploneCalendar .weekdays th {
     color: #c8af8b;
     text-align: center;
+    border-bottom: solid 1px #cbb291;
     font-weight: bold;
+    font-size: 15px;
+}
+.ploneCalendar .weekdays th.firstDay {
+    padding-left: 2px;
+}
+.ploneCalendar .weekdays th.lastDay {
+    padding-right: 2px;
 }
 .ploneCalendar .event {
     background-color: #ffffff;
@@ -205,7 +217,7 @@ a.managePortletsFallback {
 .portletCalendar .portletItem .portletBottomLeft {
     display: block;
     margin-top: 3px;
-    padding: 8px 3px;
+    padding: 5px 3px;
     border-top: solid 1px #cbb291;
 }
 .portletCalendar .portletItem .portletBottomLeft a {

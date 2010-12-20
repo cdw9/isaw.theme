@@ -36,7 +36,12 @@
                     ><tal:data tal:repeat="weekday python:['S','M','T','W','T','F','S']"
                         ><th scope="col"
                              i18n:translate=""
-                             tal:content="weekday">Su</th
+                             tal:define="isFirst repeat/weekday/start;
+                                         isLast repeat/weekday/end;
+                                         firstClass python:isFirst and 'firstDay' or '';
+                                         lastClass python:isLast and 'lastDay' or ''"
+                             tal:content="weekday"
+                             tal:attributes="class string: ${firstClass} ${lastClass}">Su</th
                     ></tal:data>
                 </tr>
             </thead>
