@@ -20,10 +20,10 @@
         <div class="eventCal">
             Add to Your Calendar:
             <ul>
-            <li><a href="#" class="cal ical">i.Cal</a></li>
             <li><a href="#" class="cal vcal">v.Cal</a></li>
+            <li><a href="#" class="cal ical">i.Cal</a></li>
             </ul>
-            RSVP: <a href="mailto:ISAWonline@nyu.edu">ISAWonline@nyu.edu</a>
+            <div>RSVP: <a href="mailto:ISAWonline@nyu.edu">ISAWonline@nyu.edu</a></div>
         </div>
         
         <div class="subheading">18 May 2010, 6:00 p.m.</div>

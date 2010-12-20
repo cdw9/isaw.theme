@@ -4,6 +4,10 @@
 */
 
 /* event detail page */
+.template-event_detail #content {
+    margin-right: 6px;
+}
+
 .eventCal {
     float: right;
     text-align: right;
@@ -11,8 +15,9 @@
 }
 
 #content .eventCal li {
-    display: inline-block;
-    margin-left: 8px;
+    display: block;
+    float: right;
+    margin: 0 0 10px 8px;
     text-align: left;
 }
 
@@ -26,6 +31,10 @@
 
 .eventCal .vcal {
     background-position: top right;
+}
+
+#content .eventCal div {
+    clear: both;
 }
 
 .eventType {
