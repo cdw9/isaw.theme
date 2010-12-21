@@ -371,7 +371,9 @@ body {
 }
 
 #content,
-#edit-bar {
+#edit-bar,
+.portalMessage.error,
+.portalMessage.warning {
     margin-top: 55px;
 }
 
