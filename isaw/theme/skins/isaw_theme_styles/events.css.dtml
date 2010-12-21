@@ -89,7 +89,7 @@
 }
 
 .eventListing {
-    margin-bottom:30px;
+    margin-bottom: 40px;
 }
 
 /* </dtml-with> */
