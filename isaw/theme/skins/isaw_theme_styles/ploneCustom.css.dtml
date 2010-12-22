@@ -314,6 +314,8 @@ body {
 #socialtools {
     font-size: 12px;
     margin-top: -4px;
+    padding-left: 135px;
+    height: 20px !important;
 }
 
 #at15s {
@@ -384,6 +386,7 @@ body {
 .documentHeading {
     margin: -6px 0;
     *margin-bottom: -4px;
+    max-width: 565px;
 }
 
 .documentHeading span {
@@ -391,7 +394,6 @@ body {
     *line-height: 30px;
     padding-right: 4px;
     background-color: #F3F1EB;
-    width: 566px;
 }
 
 #content .documentFirstHeading {
