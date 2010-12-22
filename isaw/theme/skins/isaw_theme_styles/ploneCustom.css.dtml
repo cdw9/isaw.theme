@@ -5,6 +5,7 @@
 
 body {
     background-color: #6f5c54;
+    *padding-top: 25px;
 }
 
 #visual-portal-wrapper {
@@ -66,6 +67,11 @@ body {
 
 #portal-personaltools .actionMenuHeader {
     padding: 0;
+}
+
+#portal-personaltools .actionMenuHeader a {
+    *padding-right: 16px;
+    *background: url('&dtml-portal_url;/personalbar_arrow.png') no-repeat 3px right;
 }
 
 #header-links a,
@@ -377,6 +383,13 @@ body {
 .portalMessage.error,
 .portalMessage.warning {
     margin-top: 55px;
+}
+
+.template-home_page_view #content,
+.template-home_page_view #edit-bar,
+.template-home_page_view .portalMessage.error,
+.template-home_page_view .portalMessage.warning {
+    margin-top: 0 !important;
 }
 
 .documentEditable #content {
