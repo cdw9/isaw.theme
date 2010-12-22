@@ -9,6 +9,7 @@ jq(document).ready(function(){
    var titleHeight = jq("#above-content").height();
    jq("#content, #edit-bar").css("margin-top",titleHeight + 9);
    jq("#portal-column-two .visualPadding").css("margin-top",titleHeight + 1);
+   jq("#socialtools").css("margin-top",titleHeight - 23);
    
 });
 
