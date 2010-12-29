@@ -151,6 +151,7 @@
 #faculty-cv th {
     font-size: 17px;
     padding-bottom: 5px;
+    text-align: left;
 }
 
 #faculty-cv td {
