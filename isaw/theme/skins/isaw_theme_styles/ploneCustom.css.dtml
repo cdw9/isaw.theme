@@ -467,6 +467,15 @@ body {
     color: &dtml-linkHoverColor;;
 }
 
+.template-manage-portlets #above-content {
+    width: 310px;
+    border: none;
+}
+
+.template-manage-portlets #socialtools {
+    display: none;
+}
+
 /* HOMEPAGE */
 .template-home_page_view #portal-column-content {
     padding-left: 12px;
