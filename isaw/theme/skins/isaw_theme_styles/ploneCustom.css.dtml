@@ -515,7 +515,7 @@ body {
 .homeEvent {
     width: 165px;
     padding-right: 10px;
-    font-size: 11px;
+    font-size: 12px;
     float: left;
 }
 
@@ -524,7 +524,7 @@ body {
     margin-top: 10px;
 }
 
-.homeEvent .eventSpeaker {
+.homeEvent .speaker {
     font-weight: bold;
 }
 

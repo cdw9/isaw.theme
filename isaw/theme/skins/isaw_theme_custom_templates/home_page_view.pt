@@ -55,11 +55,11 @@
                             <span tal:replace="python:DateTime(event.start).strftime('%e %B %Y')" />: <span tal:replace="event/Title" />
                         </a></h4>
                         <!--<tal:speaker condition="event/getSpeaker">
-                            <span class="eventSpeaker" tal:content="event/getSpeaker" />:
+                            <span class="speaker" tal:content="event/getSpeaker" />:
                         </tal:speaker>-->
                         <span tal:replace="event/Description" />
                         <p>
-                            <span class="eventTime" tal:content="python:DateTime(event.start).strftime('%l:%M %p')" />
+                            <span class="eventTime" tal:content="python:DateTime(event.start).strftime('%l:%M %p')" /><span tal:condition="event/location">,</span> 
                             <span class="eventLocation" tal:content="event/location" />
                         </p>
                     </div>
