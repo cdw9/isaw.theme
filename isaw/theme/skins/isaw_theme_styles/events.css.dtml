@@ -12,6 +12,7 @@
     float: right;
     text-align: right;
     width: 275px;
+    margin-bottom: 13px;
 }
 
 #content .eventCal li {
@@ -48,6 +49,11 @@
 .eventSpeakerLanding {
     font-size: 17px;
     color: &dtml-primaryColor;;
+}
+
+.eventDescription {
+    clear: both;
+    margin-top: 10px;
 }
 
 .eventBody {

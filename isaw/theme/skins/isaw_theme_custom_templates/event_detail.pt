@@ -13,6 +13,7 @@
 <body>
     
 <metal:block fill-slot="content-title" />
+<metal:block fill-slot="content-description" />
     
 <metal:content-core fill-slot="content-core">
     <metal:content-core define-macro="content-core">
@@ -29,6 +30,8 @@
         <div class="subheading">18 May 2010, 6:00 p.m.</div>
         <div class="eventType">Visiting Research Scholar Lecture</div>
         <div class="eventSpeaker">Arlo Griffiths, French School of Asian Studies</div>
+        
+        <div class="eventDescription" tal:content="context/Description" />
         
         <div class="eventBody">
             <!-- the image area may change depending on implementation -->
